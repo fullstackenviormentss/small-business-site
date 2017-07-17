@@ -34,3 +34,26 @@ input {
 		max-width: 100%;
 	}
 }
+
+
+.cbb-input {
+	background-color: white;
+	height: 40rem;
+	padding: 5%;	
+	text-align: center;
+
+	h3 {
+		text-align: center;
+		color: $color-gray-dark;
+	}
+}
+
+.input-container {
+	padding: 10% 0;
+
+	h4 {
+		font-family: $font-sans;
+		font-weight: $font-normal;
+		//text-transform: uppercase;
+	}
+}
