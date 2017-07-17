@@ -2,15 +2,15 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function() {
-    gulp.src('app/src/stylesheets/*.scss')
+    gulp.src('sass/**/*.scss')
         .pipe(sass({
             sourceComments: true,
             outputStyle: 'expanded',
             errLogToConsole: true
         }))
-        .pipe(gulp.dest('app/css'));
+        .pipe(gulp.dest('css/'));
 });
 
-gulp.task('watch', ['sass'], function() {
-    var sassWatcher = gulp.watch('app/src/stylesheets/**/*.scss', ['sass']);
+gulp.task('default', ['sass'], function() {
+    var sassWatcher = gulp.watch('sass/**/*.scss', ['sass']);
 });

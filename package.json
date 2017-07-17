@@ -1,10 +1,9 @@
 {
-  "name": "templates",
+  "name": "cb-templates",
   "version": "1.0.0",
-  "description": "",
+  "description": "small business pages ",
   "main": "index.js",
   "dependencies": {
-    "gulp-sass": "^3.1.0",
     "uswds": "^1.2.1"
   },
   "devDependencies": {
@@ -14,14 +13,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/annaawang/templates.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/annaawang/templates/issues"
-  },
-  "homepage": "https://github.com/annaawang/templates#readme"
+  "author": "anna wang",
+  "license": "ISC"
 }

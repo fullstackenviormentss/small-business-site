@@ -1,0 +1,5 @@
+.usa-navbar {
+	@include media($nav-width) {
+		height: 6rem;
+	}
+}
