@@ -3,17 +3,13 @@ var sass = require('gulp-sass');
 var fileinclude = require('gulp-file-include');
 
 gulp.task('sass', function() {
-    gulp.src('src/sass/*.scss')
+    gulp.src('src/sass/**/*.scss')
         .pipe(sass({
             sourceComments: true,
             outputStyle: 'expanded',
             errLogToConsole: true
         }))
         .pipe(gulp.dest('dist/css/'));
-});
-
-gulp.task('default', ['sass'], function() {
-    var sassWatcher = gulp.watch('src/sass/*.scss', ['sass']);
 });
 
 gulp.task('html', function() {
@@ -24,3 +20,21 @@ gulp.task('html', function() {
 	}))
 	.pipe(gulp.dest('./dist/html/'))
 });
+
+
+gulp.task('index', function() {
+	return gulp.src(['src/html/pages/index.html'])
+	.pipe(fileinclude({
+		prefix: '@@',
+		basepath: '@file'
+	}))
+	.pipe(gulp.dest('./dist/'))
+});
+
+gulp.task('watch', function() {
+    gulp.watch('src/sass/**/*.scss', ['sass']);
+    gulp.watch('src/html/pages/index.html', ['index']); 
+    gulp.watch('src/html/**/*.html', ['html']);
+});
+
+gulp.task('default', ['sass', 'index', 'html']);

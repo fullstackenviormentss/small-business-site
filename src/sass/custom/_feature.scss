@@ -1,6 +1,6 @@
 // Featured Content
 .featured-content {
-	min-height: $featured-height;
+	height: $featured-height;
 	background-color: $color-gray-lighter;
 	padding: 7%;
 	margin-bottom: 5%;
@@ -48,6 +48,10 @@
 
 	&:last-child {
 		margin-bottom: 0;
+	}
+
+	@include media($medium-screen) {
+		height: $featured-height / 3.05;
 	}
 
 }

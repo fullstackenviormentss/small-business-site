@@ -15,10 +15,13 @@ form {
 label {
 	margin: auto;
 	display: inline-block;
+	font-weight: $font-bold;
 }
 
 input {
 	display: inline-block;
+	border: 1px solid $color-gray-light;
+	margin: 1em 0;
 
 	&.usa-input-medium {
 		margin: auto;
@@ -39,21 +42,31 @@ input {
 .cbb-input {
 	background-color: white;
 	height: 40rem;
-	padding: 5%;	
+	padding: 2%;	
 	text-align: center;
 
 	h3 {
 		text-align: center;
 		color: $color-gray-dark;
+		padding: 3% 0;
 	}
 }
 
 .input-container {
-	padding: 10% 0;
+	padding: 5% 0;
 
 	h4 {
 		font-family: $font-sans;
 		font-weight: $font-normal;
 		//text-transform: uppercase;
 	}
+
+	a {
+		text-decoration: none;
+
+		p {
+			margin: 0;
+		}
+	}
+	
 }

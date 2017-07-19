@@ -1,121 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>New Business</title>
-  <meta name="description" content="AEM landing page template">
-  <link type="text/css" rel="stylesheet" href="css/all.css">
-
-</head>
+<!-- Head -->
+@@include('../inc/head.html', {
+  "index": "false",
+  "description": " 'Metadata description' ",
+  "title": "Census for Small Business"
+})
+<!-- End of Head -->
 
 
 <body>
 
   <!-- Nav -->
-  <div class="usa-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo" id="logo">
-      <img src="img/census-logo-white.svg" alt="Census Bureau logo white">
-    </div>
-  </div>
-
-  <nav role="navigation" class="usa-nav">
-    <div class="usa-nav-inner">
-      <ul class="usa-nav-primary usa-accordion">
-        <li>
-          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
-            <span>Start a Business</span>
-          </button>
-            <ul id="side-nav-1" class="usa-nav-submenu">
-              <li>
-                <a href="#">Business Plan</a>
-              </li>
-              <li>
-                <a href="#">Find a Location</a>
-              </li>
-              <li>
-                <a href="#">My NAICS Code</a>
-              </li>
-            </ul>
-        </li>
-
-        <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
-              <span>Grow a Business</span>
-            </button>
-            <ul id="sidenav-2" class="usa-nav-submenu">
-              <li>
-                <a href="#">My Customers</a>
-              </li>
-              <li>
-                <a href="#">My Competitors</a>
-              </li>
-              <li>
-                <a href="#">Build a Report</a>
-              </li>
-              <li>
-                <a href="#">Survey Help</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
-              <span>Explore Resources</span>
-            </button>
-            <ul id="sidenav-3" class="usa-nav-submenu">
-              <li>
-                <a href="#">Success Stories</a>
-              </li>
-              <li>
-                <a href="#">Business Builder</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
-              <span>Get Advice</span>
-            </button>
-            <ul id="sidenav-4" class="usa-nav-submenu">
-              <li>
-                <a href="#">Find a DDS</a>
-              </li>
-              <li>
-                <a href="#">Get an Advisor</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-    <div class="usa-nav-secondary">
-          <form class="usa-search usa-search-small js-search-form">
-            <div role="search">
-              <label class="usa-sr-only" for="search-field-small">Search small</label>
-              <input id="search-field-small" type="search" name="search">
-              <button type="submit">
-                <span class="usa-sr-only">Search</span>
-              </button>
-            </div>
-          </form>
-          <ul class="usa-unstyled-list usa-nav-secondary-links">
-            <li class="js-search-button-container">
-              <button class="usa-header-search-button js-search-button">Search</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
+  @@include('../inc/navigation.html', {
+    "index": "false"
+  })
+  <!--End of Nav-->
 
   <div class="usa-overlay"></div>
 
@@ -132,7 +33,7 @@
           <a href="#" class="box-link">
             <div class="featured-link">
               <div class="featured-link-icon">
-                <img src="img/bplan.svg" alt="business plan icon">
+                <img src="../img/bplan.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
                 <h3>Business Plan</h3>
@@ -144,7 +45,7 @@
           <a href="#" class="box-link">
             <div class="featured-link">
               <div class="featured-link-icon">
-                <img src="img/location.svg" alt="business plan icon">
+                <img src="../img/location.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
                 <h3>Find a Location</h3>
@@ -156,7 +57,7 @@
           <a href="#" class="box-link">
             <div class="featured-link">
               <div class="featured-link-icon">
-                <img src="img/industry.svg" alt="business plan icon">
+                <img src="../img/industry.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
                 <h3>My NAICS Code</h3>
@@ -177,28 +78,36 @@
       </div>
 
       <div class="usa-grid">
-        <div class="input-container usa-width-one-half">
-          <h4>My Industry (NAICS)</h4>
-          <form class="usa-form">
-            <fieldset>
+        <form action="https://cbb.census.gov/sbe/#" target="_blank" method="get">
 
-            </fieldset>
-          </form>
+        <div class="input-container usa-width-one-half">
+          <label for="industry">My Industry (NAICS)</label>
+          <input type="text" id="industry" name="industry0">
           <a href="#"><p>Don't know your NAICS code?</p></a>
         </div>
         
         <div class="input-container usa-width-one-half">
-          <h4>My City</h4>
-          <form></form>
+          <label for="location">Location</label>
+          <input type="text" id="location" name="geoId">
           <a href="#"><p>Use current location</p></a>
         </div>
       </div>
 
+      <input type="hidden" name="geoType" value="zcta">
+      <input type="hidden" name="view" value="report">
+      <input type="hidden" name="reportType" value="summary">
+
       <div class="usa-grid">
         <div class="usa-width-one-whole">
-
+          <div class="button">
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </div>
+      </form>
+    </section>
+
+    <section class="usa-section">
     </section>
     
     <!--
@@ -250,7 +159,7 @@
   
 
 </body>
-<script src="js/uswds.min.js"> </script>
+<script src="../js/uswds.min.js"> </script>
 </html>
 
 

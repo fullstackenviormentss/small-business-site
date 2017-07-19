@@ -2,9 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
-@@include('../inc/head.html')
+@@include('../inc/head.html', {
+  "index": "true",
+  "description": " 'Metadata description' ",
+  "title": "Census for Small Business"
+})
 <!-- End of Head -->
-
 
 <body>
 
@@ -13,7 +16,7 @@
     <div class="usa-accordian">
       <header class="usa-banner-header">
         <div class="usa-grid usa-banner-inner">
-          <img src="node_modules/uswds/dist/img/favicons/favicon-57.png" alt="U.S. flag">
+          <img src="img/favicon-57.png" alt="U.S. flag">
           <p>An official website of the United States government</p>
         </div>
       </header>
@@ -21,7 +24,9 @@
   </div>
 
   <!-- Nav -->
-  @@include('../inc/navigation.html')
+  @@include('../inc/navigation.html', {
+  "index": "true"
+  })
   <!--End of Nav-->
 
   <div class="usa-overlay"></div>

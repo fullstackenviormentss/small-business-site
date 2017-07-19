@@ -1,5 +1,82 @@
-.usa-navbar {
-	@include media($nav-width) {
-		height: 6rem;
+.user-tag {
+	display: inline-block;
+
+	p {
+		font-family: $font-sans;
+		font-size: $h6-font-size;
+		color: $color-white;
+		text-transform: capitalize;
+		margin: 3rem 0 0 1.5rem;
 	}
+}
+
+.usa-logo {
+	display: inline-block;
+}
+
+
+// Side navigation
+
+.usa-layout-docs-sidenav {
+	display: none;
+	position: static;
+	margin-top: 6rem;
+
+
+	@include media($large-screen) {
+		display: block;
+	}
+}
+
+.usa-sidenav-list {
+
+	&.first-child {
+		font-weight: $font-bold;
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+	}
+
+	&.bottom {
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	}
+
+	li {
+		position: relative;
+		border: none;
+	}
+	
+}
+
+.usa-layout-docs-main_content {
+	position: relative;
+	float: right;
+	margin: auto;
+	padding-left: 2%;
+
+
+	h1, h2, h3 {
+		font-family: $font-sans;
+		font-weight: $font-bold;
+	}
+
+	.img-container {
+		width: 100%;
+		//text-align: center;
+
+		height: 35rem;
+
+		img {
+			height: 100%;
+		}
+	}
+
+}
+
+.usa-font-lead {
+	font-family: $font-sans;
 }

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Find a location</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/all.css"> 
+  	<script src="../js/jquery.min.js"></script>
+  	<script src="../js/smb.js"></script> 
+	
+
+</head>
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+  <div class="usa-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo" id="logo">
+      
+
+      
+      <img src="../img/census-logo-white.svg" alt="Census Bureau logo white"> 
+      
+    </div>
+
+    <!--
+    <div class="user-tag">
+      <p>for small business</p>
+    </div>
+
+    -->
+  </div>
+
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
+      <ul class="usa-nav-primary usa-accordion">
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+            <span>Start a Business</span>
+          </button>
+            <ul id="side-nav-1" class="usa-nav-submenu">
+              <li>
+                <a href="business-plan.html">Business Plan</a>
+              </li>
+              <li>
+                <a href="find-a-location.html">Find a Location</a>
+              </li>
+              <li>
+                <a href="naics.html">My NAICS Code</a>
+              </li>
+            </ul>
+        </li>
+
+        <li>
+            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+              <span>Grow a Business</span>
+            </button>
+            <ul id="sidenav-2" class="usa-nav-submenu">
+              <li>
+                <a href="#">My Customers</a>
+              </li>
+              <li>
+                <a href="#">My Competitors</a>
+              </li>
+              <li>
+                <a href="#">Build a Report</a>
+              </li>
+              <li>
+                <a href="#">Survey Help</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+              <span>Explore Resources</span>
+            </button>
+            <ul id="sidenav-3" class="usa-nav-submenu">
+              <li>
+                <a href="#">Success Stories</a>
+              </li>
+              <li>
+                <a href="#">Business Builder</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
+              <span>Get Advice</span>
+            </button>
+            <ul id="sidenav-4" class="usa-nav-submenu">
+              <li>
+                <a href="#">Find a DDS</a>
+              </li>
+              <li>
+                <a href="#">Get an Advisor</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+
+    <div class="usa-nav-secondary">
+          <form class="usa-search usa-search-small js-search-form">
+            <div role="search">
+              <label class="usa-sr-only" for="search-field-small">Search small</label>
+              <input id="search-field-small" type="search" name="search">
+              <button type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+          <ul class="usa-unstyled-list usa-nav-secondary-links">
+            <li class="js-search-button-container">
+              <button class="usa-header-search-button js-search-button">Search</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a href="#location">Find a Location</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="usa-current" href= '#naics-1'>Benefits of NAICS</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#naics-1a' >Compete for contracts</a>
+          </li>
+          <li>
+            <a href= '#naics-1b' >Get SBA and VA certified</a>
+          </li>
+          <li>
+            <a href= '#naics-1c' >Reduce IRA audit risk</a>
+          </li>
+          <li>
+            <a href= '#naics-1d' >Save on insurance</a>
+          </li>
+          <li>
+            <a href= '#naics-1e' >Improve your business loan posture</a>
+          </li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#naics-2'>How we use NAICS codes</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href= '#naics-2a' >Compliance</a>
+          </li>
+          <li>
+            <a href= '#naics-2b' >Taxes</a>
+          </li>
+          <li>
+            <a href= '#naics-2c' >Statistics</a>
+          </li>
+          <li>
+            <a href= '#naics-2d' >Miscellaneous administrative uses</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#naics-3'>Finding my NAICS code</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href= '#naics-3a' >Census Business Builder</a>
+          </li>
+          <li>
+            <a href= '#naics-3b' >Small Business Administration</a>
+          </li>
+          <li>
+            <a href= '#naics-3c' >SCORE.org</a>
+          </li>
+          <li>
+            <a href= '#naics-3d' >BPlans</a>
+          </li>
+        </ul>
+      </li>
+
+      
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content">
+    <h1>About NAICS</h1>
+    <p class="usa-font-lead">The North American Industry Classification System (NAICS) is used by the United States, Canada, and Mexico to classify businesses by their industry. Each category of business has its own five or six-digit NAICS code.</p>
+    
+    <div class="img-container">
+      <img src="../img/illustration.jpeg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="naics-1">Benefits of NAICS</h2>
+    <p>We have a wealth of information that you can use to create a data-driven plan for your business.</p>
+    <h3 id="naics-1a">Compete for government contracts and grants</h3>
+    <p>Federal and state governments often require NAICS codes to determine if a business is eligible for government purchase contracts or grants.</p>
+    <p>TIP: The <a href="#">System for Award Management (SAM)</a>, where businesses register to become federal contractors, accepts multiple NAICS classification codes per establishment. If your company is interested in participating in the federal marketplace, you should select four to five NAICS codes that best reflect your primary lines of business. </p>
+
+    <h3 id="naics-1b">Get certifications from the Small Business Administration and Department of Veterans Affairs</h3>
+    <p>The Small Business Administration requires NAICS codes from small businesses that wish to become SBA-certified, and be eligible for government contracts set aside for certified small businesses.</p>
+    <p>The Department of Veterans Affairs requires NAICS codes for veteran-owned small businesses wishing to become a VA-verified Veteran-Owned Small Business (VOSB) or Service-Disabled Veteran-Owned Small Business (SDVOSB). These verifications allow small businesses to be eligible for VA contracts.</p>
+
+    <h3 id="naics-1c">Reduce Internal Revenue Service audit risks</h3>
+    <p>The IRS uses the NAICS code from your Schedule C to determine if your business’ tax returns are in line with other businesses in your industry.</p>
+    <p>TIP: If your primary NAICS code is wrong, and the IRS thinks your deductions aren’t comparable to similar businesses, you may have a higher chance of being audited.</p>
+
+    <h3 id="naics-1d">Save on insurance</h3>
+    <p>Knowing your company's NAICS codes can save you plenty on worker's compensation and other insurance premiums.</p>
+    <p>Tip: Always check that anyone using a NAICS code to classify your business for a service or insurance policy is using the correct code(s). This assures that your rates are consistent with your true risk and that your business is properly compared.</p>
+
+    <h3 id="naics-1e">Improve your business loan posture</h3>
+    <p>Commercial lenders make industry comparisons to see how closely you compare to other businesses, so choosing the right codes for your application can give you a stronger chance of being approved for a loan. </p>
+    <p>Tip: Make sure the lender uses the correct NAICS code for your business. Incorrect codes can raise red flags in the underwriting process.</p>
+
+    <!-- Section 2 -->
+    <h2 id="naics-2">How the government uses NAICS codes</h2>
+    <p>Now that you know what data exists, it’s time to write a business plan. Don’t know where to begin? These resources can help you apply Census data to your plan.</p>
+
+    <h3 id="naics-2a">Compliance</h3>
+    <p>Many federal, state and local governments require NAICS codes from businesses for administrative, taxes, or contracting purposes.</p>
+
+    <h3 id="naics-2b">Taxes</h3>
+    <p>The Internal Revenue Service (IRS) evaluates and scores your Tax Form 1040 Schedule C using the NAICS code submitted on the form.</p>
+
+    <h3 id="naics-2c">Statistics</h3>
+    <p>NAICS helps group similar business establishments for the purpose of collecting, analyzing, and publishing statistical data related to the economy. This collection contributes to data products from the Census Bureau and other federal, state, and local agencies.</p>
+
+    <h3 id="business-plan-2d">Miscellaneous administrative uses</h3>
+    <p>Government agencies may use NAICS codes for other administrative purposes and required forms. For questions regarding other federal agencies' uses of the NAICS system, <a href="#">contact the specific agency.</a></p>
+
+    <!-- Section 3 -->
+    <h2 id="naics-3">Find my NAICS code</h2>
+    <p>NAICS is a self-assigned classification system, which means that your NAICS code is not assigned to you. Instead, you must identify the right NAICS code(s) for your business.</p>
+
+    <h3 id="naics-3a">Get started</h3>
+    <p>The NAICS has 20 primary classifications of Broad Industries, often called two-digit NAICS codes. For example, all Retail Trade businesses are under the NAICS two-digit codes of 44-45, while the Accommodation and Food Services industry is under the NAICS two-digit code of 72.</p>
+    <p>The NAICS hierarchy includes 96 subcategories and 317 industry groups. You can identify subcategories by their 3 digit codes, and industries by their 4 digit codes. To properly determine your primary NAICS code(s), you must work down the classification scheme to identify the best fit for your business.
+    </p>
+
+    <h3 id="naics-3b">Title</h3>
+    <p>Your business may need more than one NAICS code. Utilize a secondary NAICS code if your business has characteristics of another industry. If your business has more than one location, you will need to choose a NAICS code that applies to the primary activity taking place at each location.</p>
+
+    <p><span>Need help?</span>We provide <a href="#">a training</a> to help you make the right choices</p>
+    <p><span>Already an expert NAICS navigator?</span><a href="#">Find your code</a>.</p>
+    <p><span>Can't find the perfect fit?</span>Sometimes, there is no perfect fit for your business at the four-digit level. For each classification level there is an option that says, “Not otherwise classified.” If no other codes are applicable to your business, select this as your NAICS identification.
+
+
+    <h2>Ready to get started?</h2>
+    <a class="usa-button usa-button-big usa-button-primary" href="#">Find your data</a>
+
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Primary link</a>
+          </li>
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Permanently relevant</a>
+          </li>
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Easy to understand</a>
+          </li>
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Site policies (example)</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        <img class="usa-footer-logo-img" src="/assets/img/logo-img.png" alt="Logo image">
+        <h3 class="usa-footer-logo-heading">Name of Agency</h3>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <a class="usa-link-facebook" href="javascript:void(0);">
+          <span>Facebook</span>
+        </a>
+        <a class="usa-link-twitter" href="javascript:void(0);">
+          <span>Twitter</span>
+        </a>
+        <a class="usa-link-youtube" href="javascript:void(0);">
+          <span>YouTube</span>
+        </a>
+        <a class="usa-link-rss" href="javascript:void(0);">
+          <span>RSS</span>
+        </a>
+        <address>
+          <h3 class="usa-footer-contact-heading">Agency Contact Center</h3>
+          <p>(800) CALL-GOVT</p>
+          <a href="mailto:info@agency.gov">info@agency.gov</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

@@ -1,4 +1,9 @@
+$output-bourbon-deprecation-warnings: false !default; 
+
+// USDS Design Standards SCSS
 @import '../../node_modules/uswds/src/stylesheets/uswds.scss';
+
+// Custom Pages
 @import 'custom/variables.scss';
 @import 'custom/navigation.scss';
 @import 'custom/header.scss';
@@ -6,5 +11,7 @@
 @import 'custom/landing.scss';
 @import 'custom/section.scss';
 @import 'custom/inputs.scss';
-@import 'custom/datacard.scss';
 @import 'custom/feature.scss';
+@import 'custom/grid.scss';
+@import 'custom/typography.scss';
+

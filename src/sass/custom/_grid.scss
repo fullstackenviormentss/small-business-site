@@ -1,0 +1,4 @@
+.usa-grid-wide {
+	@extend .usa-grid;
+	max-width: $site-wide-width;
+}

@@ -1,28 +1,48 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<!-- Head -->
+<head>
   <meta charset="utf-8">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>New Business</title>
-  <meta name="description" content="AEM landing page template">
-  <link type="text/css" rel="stylesheet" href="css/all.css">
+  <title>Census for Small Business</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/all.css"> 
+  	<script src="../js/jquery.min.js"></script>
+  	<script src="../js/smb.js"></script> 
+	
 
 </head>
+<!-- End of Head -->
 
 
 <body>
 
   <!-- Nav -->
-  <div class="usa-navbar">
+    <div class="usa-navbar">
     <button class="usa-menu-btn">Menu</button>
     <div class="usa-logo" id="logo">
-      <img src="img/census-logo-white.svg" alt="Census Bureau logo white">
+      
+
+      
+      <img src="../img/census-logo-white.svg" alt="Census Bureau logo white"> 
+      
     </div>
+
+    <!--
+    <div class="user-tag">
+      <p>for small business</p>
+    </div>
+
+    -->
   </div>
 
   <nav role="navigation" class="usa-nav">
@@ -34,13 +54,13 @@
           </button>
             <ul id="side-nav-1" class="usa-nav-submenu">
               <li>
-                <a href="#">Business Plan</a>
+                <a href="business-plan.html">Business Plan</a>
               </li>
               <li>
-                <a href="#">Find a Location</a>
+                <a href="find-a-location.html">Find a Location</a>
               </li>
               <li>
-                <a href="#">My NAICS Code</a>
+                <a href="naics.html">My NAICS Code</a>
               </li>
             </ul>
         </li>
@@ -116,6 +136,7 @@
         </div>
       </div>
   </nav>
+  <!--End of Nav-->
 
   <div class="usa-overlay"></div>
 
@@ -132,7 +153,7 @@
           <a href="#" class="box-link">
             <div class="featured-link">
               <div class="featured-link-icon">
-                <img src="img/bplan.svg" alt="business plan icon">
+                <img src="../img/bplan.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
                 <h3>Business Plan</h3>
@@ -144,7 +165,7 @@
           <a href="#" class="box-link">
             <div class="featured-link">
               <div class="featured-link-icon">
-                <img src="img/location.svg" alt="business plan icon">
+                <img src="../img/location.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
                 <h3>Find a Location</h3>
@@ -156,7 +177,7 @@
           <a href="#" class="box-link">
             <div class="featured-link">
               <div class="featured-link-icon">
-                <img src="img/industry.svg" alt="business plan icon">
+                <img src="../img/industry.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
                 <h3>My NAICS Code</h3>
@@ -177,28 +198,36 @@
       </div>
 
       <div class="usa-grid">
-        <div class="input-container usa-width-one-half">
-          <h4>My Industry (NAICS)</h4>
-          <form class="usa-form">
-            <fieldset>
+        <form action="https://cbb.census.gov/sbe/#" target="_blank" method="get">
 
-            </fieldset>
-          </form>
+        <div class="input-container usa-width-one-half">
+          <label for="industry">My Industry (NAICS)</label>
+          <input type="text" id="industry" name="industry0">
           <a href="#"><p>Don't know your NAICS code?</p></a>
         </div>
         
         <div class="input-container usa-width-one-half">
-          <h4>My City</h4>
-          <form></form>
+          <label for="location">Location</label>
+          <input type="text" id="location" name="geoId">
           <a href="#"><p>Use current location</p></a>
         </div>
       </div>
 
+      <input type="hidden" name="geoType" value="zcta">
+      <input type="hidden" name="view" value="report">
+      <input type="hidden" name="reportType" value="summary">
+
       <div class="usa-grid">
         <div class="usa-width-one-whole">
-
+          <div class="button">
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </div>
+      </form>
+    </section>
+
+    <section class="usa-section">
     </section>
     
     <!--
@@ -250,7 +279,7 @@
   
 
 </body>
-<script src="js/uswds.min.js"> </script>
+<script src="../js/uswds.min.js"> </script>
 </html>
 
 
