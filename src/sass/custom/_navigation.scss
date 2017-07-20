@@ -13,20 +13,44 @@
 .usa-logo {
 	display: inline-block;
 }
+.nav-link:hover .submenu-container {
+	display: block;
+}
 
-
-// Side navigation
-
-.usa-layout-docs-sidenav {
-	display: none;
-	position: static;
-	margin-top: 6rem;
-
-
-	@include media($large-screen) {
+.nav-link {
+	cursor: pointer;
+	&:hover  .submenu-container {
 		display: block;
 	}
 }
+.submenu-container {
+	display: none;
+	position: absolute;
+}
+
+// Side navigation
+
+.usa-layout-docs {
+	display: flex;
+}
+
+
+.usa-layout-docs-sidenav {
+	display: none;
+	
+
+	&.bottom {
+		align-items: stretch;
+	}
+
+	@include media($large-screen) {
+		display: block;
+		position: absolute;
+	 	margin-top: 6rem;
+	 	align-items: stretch;
+	}
+}
+
 
 .usa-sidenav-list {
 
@@ -40,7 +64,7 @@
 	}
 
 	&.bottom {
-		position: absolute;
+		position: relative;
 		top: auto;
 		bottom: 0;
 	}
@@ -80,3 +104,12 @@
 .usa-font-lead {
 	font-family: $font-sans;
 }
+
+.current {
+	border-left: 4px solid $color-primary;
+  	color: $color-primary;
+    font-weight: $font-bold;
+    padding-left: 1.4rem;
+}
+
+
