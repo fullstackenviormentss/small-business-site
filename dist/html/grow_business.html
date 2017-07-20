@@ -1,20 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
-@@include('../inc/head.html', {
-  "index": "false",
-  "description": " 'Metadata description' ",
-  "title": "Census for Small Business"
-})
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Census for Small Business</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/all.css"> 
+  	<script src="../js/jquery.min.js"></script>
+  	<script src="../js/smb.js"></script> 
+	
+
+</head>
 <!-- End of Head -->
 
 
 <body>
 
   <!-- Nav -->
-  @@include('../inc/navigation.html', {
-    "index": "false"
-  })
+    <div class="usa-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo" id="logo">
+      <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+    </div>
+
+    <!--
+    <div class="user-tag">
+      <p>for small business</p>
+    </div>
+
+    -->
+  </div>
+
+  <nav role="navigation" class="usa-nav">
+    <div class="usa-nav-inner">
+      <ul class="usa-nav-primary usa-accordion">
+        <li>
+          
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+            <span>Start a Business</span>
+          </button>
+            <ul id="side-nav-1" class="usa-nav-submenu">
+              <li>
+                <a href="business-plan.html">Business Plan</a>
+              </li>
+              <li>
+                <a href="find-a-location.html">Find a Location</a>
+              </li>
+              <li>
+                <a href="naics.html">My NAICS Code</a>
+              </li>
+            </ul>
+        </li>
+
+        <li>
+            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+              <span>Grow a Business</span>
+            </button>
+            <ul id="sidenav-2" class="usa-nav-submenu">
+              <li>
+                <a href="my-customers.html">My Customers</a>
+              </li>
+              <li>
+                <a href="my-competitors.html">My Competitors</a>
+              </li>
+              <li>
+                <a href="build-a-report.html">Build a Report</a>
+              </li>
+              <li>
+                <a href="survey-help.html">Survey Help</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+              <span>Explore Resources</span>
+            </button>
+            <ul id="sidenav-3" class="usa-nav-submenu">
+              <li>
+                <a href="#">Success Stories</a>
+              </li>
+              <li>
+                <a href="#">Business Builder</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
+              <span>Get Advice</span>
+            </button>
+            <ul id="sidenav-4" class="usa-nav-submenu">
+              <li>
+                <a href="#">Find a DDS</a>
+              </li>
+              <li>
+                <a href="#">Get an Advisor</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+
+    <div class="usa-nav-secondary">
+          <form class="usa-search usa-search-small js-search-form">
+            <div role="search">
+              <label class="usa-sr-only" for="search-field-small">Search small</label>
+              <input id="search-field-small" type="search" name="search">
+              <button type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+          <ul class="usa-unstyled-list usa-nav-secondary-links">
+            <li class="js-search-button-container">
+              <button class="usa-header-search-button js-search-button">Search</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
   <!--End of Nav-->
 
   <div class="usa-overlay"></div>
@@ -23,8 +141,8 @@
     <section class="usa-hero">
       <div class="usa-grid">
         <div class="featured-content usa-width-two-thirds">
-          <h3>Making Music Lessons Affordable</h3>
-          <p>This teacher used income data to make her music lessons affordable for all students.</p>
+          <h3>Paying employees a competitive wage </h3>
+          <p>This restaurant owner used employment data to be a more competitive employer.</p>
           <a class="usa-button usa-button-big usa-button-primary" href="#">Read more</a>
         </div>
         <div class="usa-width-one-third">
@@ -35,8 +153,8 @@
                 <img src="../img/bplan.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
-                <h3>Business Plan</h3>
-                <p>Find data to inform your business plan</p>
+                <h3>Customers</h3>
+                <p>Discover more about your customers</p>
               </div>
             </div>
           </a>
@@ -47,8 +165,8 @@
                 <img src="../img/location.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
-                <h3>Find a Location</h3>
-                <p>Discover the perfect place for your office</p>
+                <h3>Competitors </h3>
+                <p>Find data to stay competitive</p>
               </div>
             </div>
           </a>
@@ -59,8 +177,8 @@
                 <img src="../img/industry.svg" alt="business plan icon">
               </div>
               <div class="featured-link-text-container">
-                <h3>My NAICS Code</h3>
-                <p>Choose the right code for your business</p>
+                <h3>Survey Help</h3>
+                <p>Get assistance with our surveys</p>
               </div>
             </div>
           </a>
@@ -72,7 +190,7 @@
     <section class="cbb-input">
       <div class="usa-grid">
         <div class="usa-width-one-whole">
-          <h3>Find the best data on your customers and competitors</h3>
+          <h3>Build a report to learn more about your customers and competitors.</h3>
         </div>
       </div>
 
@@ -99,7 +217,7 @@
       <div class="usa-grid">
         <div class="usa-width-one-whole">
           <div class="button">
-            <button type="submit">Submit</button>
+            <button type="submit">Find my data</button>
           </div>
         </div>
       </div>

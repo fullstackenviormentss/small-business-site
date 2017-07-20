@@ -13,7 +13,7 @@ $(window).scroll(function() {
 	}
 
 	if (trigger >= sidebarBottomPos) {
-		$('.usa-layout-docs-sidenav').addClass('bottom');
+		
 		$('.usa-sidenav-list').addClass('bottom');
 	} else {
 		$('.usa-sidenav-list').removeClass('bottom');

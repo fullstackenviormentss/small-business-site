@@ -13,35 +13,18 @@
 .usa-logo {
 	display: inline-block;
 }
-.nav-link:hover .submenu-container {
-	display: block;
-}
 
-.nav-link {
-	cursor: pointer;
-	&:hover  .submenu-container {
-		display: block;
-	}
-}
-.submenu-container {
-	display: none;
-	position: absolute;
-}
 
 // Side navigation
 
 .usa-layout-docs {
 	display: flex;
+	height: 100%;
 }
-
 
 .usa-layout-docs-sidenav {
 	display: none;
-	
-
-	&.bottom {
-		align-items: stretch;
-	}
+	align-items: stretch;
 
 	@include media($large-screen) {
 		display: block;

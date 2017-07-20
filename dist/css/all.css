@@ -5080,44 +5080,20 @@ h3 {
   display: inline-block;
 }
 
-/* line 16, src/sass/custom/_navigation.scss */
-.nav-link:hover .submenu-container {
-  display: block;
-}
-
 /* line 20, src/sass/custom/_navigation.scss */
-.nav-link {
-  cursor: pointer;
-}
-
-/* line 22, src/sass/custom/_navigation.scss */
-.nav-link:hover .submenu-container {
-  display: block;
-}
-
-/* line 26, src/sass/custom/_navigation.scss */
-.submenu-container {
-  display: none;
-  position: absolute;
-}
-
-/* line 33, src/sass/custom/_navigation.scss */
 .usa-layout-docs {
   display: flex;
+  height: 100%;
 }
 
-/* line 38, src/sass/custom/_navigation.scss */
+/* line 25, src/sass/custom/_navigation.scss */
 .usa-layout-docs-sidenav {
   display: none;
-}
-
-/* line 42, src/sass/custom/_navigation.scss */
-.usa-layout-docs-sidenav.bottom {
   align-items: stretch;
 }
 
 @media screen and (min-width: 1201px) {
-  /* line 38, src/sass/custom/_navigation.scss */
+  /* line 25, src/sass/custom/_navigation.scss */
   .usa-layout-docs-sidenav {
     display: block;
     position: absolute;
@@ -5126,31 +5102,31 @@ h3 {
   }
 }
 
-/* line 57, src/sass/custom/_navigation.scss */
+/* line 40, src/sass/custom/_navigation.scss */
 .usa-sidenav-list.first-child {
   font-weight: 700;
 }
 
-/* line 61, src/sass/custom/_navigation.scss */
+/* line 44, src/sass/custom/_navigation.scss */
 .usa-sidenav-list.fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 66, src/sass/custom/_navigation.scss */
+/* line 49, src/sass/custom/_navigation.scss */
 .usa-sidenav-list.bottom {
   position: relative;
   top: auto;
   bottom: 0;
 }
 
-/* line 72, src/sass/custom/_navigation.scss */
+/* line 55, src/sass/custom/_navigation.scss */
 .usa-sidenav-list li {
   position: relative;
   border: none;
 }
 
-/* line 79, src/sass/custom/_navigation.scss */
+/* line 62, src/sass/custom/_navigation.scss */
 .usa-layout-docs-main_content {
   position: relative;
   float: right;
@@ -5158,29 +5134,29 @@ h3 {
   padding-left: 2%;
 }
 
-/* line 86, src/sass/custom/_navigation.scss */
+/* line 69, src/sass/custom/_navigation.scss */
 .usa-layout-docs-main_content h1, .usa-layout-docs-main_content h2, .usa-layout-docs-main_content h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
 }
 
-/* line 91, src/sass/custom/_navigation.scss */
+/* line 74, src/sass/custom/_navigation.scss */
 .usa-layout-docs-main_content .img-container {
   width: 100%;
   height: 35rem;
 }
 
-/* line 97, src/sass/custom/_navigation.scss */
+/* line 80, src/sass/custom/_navigation.scss */
 .usa-layout-docs-main_content .img-container img {
   height: 100%;
 }
 
-/* line 104, src/sass/custom/_navigation.scss */
+/* line 87, src/sass/custom/_navigation.scss */
 .usa-font-lead {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-/* line 108, src/sass/custom/_navigation.scss */
+/* line 91, src/sass/custom/_navigation.scss */
 .current {
   border-left: 4px solid #0071bc;
   color: #0071bc;
