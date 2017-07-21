@@ -25,112 +25,132 @@
 
 <body class="layout-demo">
 <!-- Nav -->
-  <div class="usa-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo" id="logo">
-      <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
-    </div>
-
-    <!--
-    <div class="user-tag">
-      <p>for small business</p>
-    </div>
-
-    -->
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
   </div>
+</div>
 
-  <nav role="navigation" class="usa-nav">
-    <div class="usa-nav-inner">
-      <ul class="usa-nav-primary usa-accordion">
-        <li>
-          
-          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
-            <span>Start a Business</span>
+
+<nav role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
           </button>
-            <ul id="side-nav-1" class="usa-nav-submenu">
-              <li>
-                <a href="business-plan.html">Business Plan</a>
-              </li>
-              <li>
-                <a href="find-a-location.html">Find a Location</a>
-              </li>
-              <li>
-                <a href="naics.html">My NAICS Code</a>
-              </li>
-            </ul>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
         </li>
 
         <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
-              <span>Grow a Business</span>
-            </button>
-            <ul id="sidenav-2" class="usa-nav-submenu">
-              <li>
-                <a href="my-customers.html">My Customers</a>
-              </li>
-              <li>
-                <a href="my-competitors.html">My Competitors</a>
-              </li>
-              <li>
-                <a href="build-a-report.html">Build a Report</a>
-              </li>
-              <li>
-                <a href="survey-help.html">Survey Help</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
-              <span>Explore Resources</span>
-            </button>
-            <ul id="sidenav-3" class="usa-nav-submenu">
-              <li>
-                <a href="#">Success Stories</a>
-              </li>
-              <li>
-                <a href="#">Business Builder</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
-              <span>Get Advice</span>
-            </button>
-            <ul id="sidenav-4" class="usa-nav-submenu">
-              <li>
-                <a href="#">Find a DDS</a>
-              </li>
-              <li>
-                <a href="#">Get an Advisor</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-    <div class="usa-nav-secondary">
-          <form class="usa-search usa-search-small js-search-form">
-            <div role="search">
-              <label class="usa-sr-only" for="search-field-small">Search small</label>
-              <input id="search-field-small" type="search" name="search">
-              <button type="submit">
-                <span class="usa-sr-only">Search</span>
-              </button>
-            </div>
-          </form>
-          <ul class="usa-unstyled-list usa-nav-secondary-links">
-            <li class="js-search-button-container">
-              <button class="usa-header-search-button js-search-button">Search</button>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="#">Success Stories</a>
+            </li>
+            <li>
+              <a href="#">Business Builder</a>
             </li>
           </ul>
-        </div>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
+            <span>Get Advice</span>
+          </button>
+          <ul id="sidenav-4" class="usa-nav-submenu">
+            <li>
+              <a href="#">Find a DDS</a>
+            </li>
+            <li>
+              <a href="#">Get an Advisor</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
       </div>
-  </nav>
+    </div>
+</nav>
+
+<!--
+<div class="">
+  <ul class="dropdown">
+    <li class="dropdown-list">
+      <a href="my-customers.html"><button>Navigate</button></a>
+      <ul class="dropdown-menu">
+        <a href="#"><li>Link 1</li></a>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown-list">
+      <a href="my-customers.html"><button>Navigate</button></a>
+      <ul class="dropdown-menu">
+        <a href="#"><li>Link 1</li></a>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </li>
+
+  </ul>
+  
+</div>
+-->
 <!--End of Nav-->
 
 <div class="usa-overlay"></div>
@@ -275,7 +295,7 @@
 
 
     <h2>Ready to get started?</h2>
-    <a class="usa-button usa-button-big usa-button-primary" href="#" target="_blank">Find your data</a>
+    <a class="usa-button usa-button-big usa-button-primary" href="#" target="_blank">Find your NAICS code</a>
 
 
   </div>

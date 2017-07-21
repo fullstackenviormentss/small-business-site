@@ -1,7 +1,72 @@
-#zipcode {
+.usa-section-light {
 
+	.image-container {
+		padding: 1%;
+		img {
+			width: 100%;
+		}
+	}
+	
+	.text-container {
+		padding: 1%;
+
+		.article-tag {
+			font-family: $font-sans;
+			color: $color-gray-dark;
+			font-size: $small-font-size;
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: $font-bold;
+			padding-bottom: 2%;
+		}
+
+		h1 {
+			font-family: $font-sans;
+			color: $color-gray-dark;
+			margin: 0;
+		}
+
+		h5 {
+			font-family: $font-sans;
+			color: $color-gray-dark;
+			font-size: $h3-font-size;
+			font-weight: $font-normal;
+			padding-bottom: 2%;
+		}
+
+	}
 }
 
-#map {
-	height: 300px;
+
+.three-section-container {
+
+	.title-container {
+		width: 100%;
+		display: block;
+		border-bottom: 3px solid $color-gray-dark;
+		margin-bottom: 3%;
+
+		h3 {
+			font-family: $font-sans;
+			text-transform: uppercase;
+			font-weight: $font-bold;
+		}
+	}
+
+	.content-container {
+		background-color: $color-gray-lightest;
+		padding: 2%;
+		height: 100%;
+
+		img {
+			width: 100%;
+		}
+
+		h3 {
+			margin: 0;
+			font-weight: $font-bold;
+		}
+	}
+
+	
 }

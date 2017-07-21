@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+@@include('../inc/head.html', {
+  "index": "false",
+  "description": " 'Metadata description' ",
+  "title": "Articles Home"
+})
+<!-- End of Head -->
+
+<body class="layout-demo">
+
+<!-- Nav -->
+@@include('../inc/navigation-2.html', {
+  "index": "false"
+})
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main id="main-content">
+  <section class="usa-section usa-section-light">
+    <div class="usa-grid">
+      <div class="image-container usa-width-one-half">
+        <img src="../img/illustration.jpeg" class="article-img" alt="test img">
+      </div>
+      <div class="text-container usa-width-one-half">
+        <p class="article-tag">Featured story</p>
+        <h1>Making music lessons affordable</h1>
+        <h5>This teacher used income data to make her music lessons affordable for all students. </h5>
+        <a class="usa-button usa-button-big usa-button-primary" href="#">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="usa-section three-section-container">
+    <div class="usa-grid">
+      <div class="usa-width-one-whole  title-container">
+        <h3>Success Stories</h3>
+      </div>
+      <div class="usa-width-one-third content-container">
+        <img src="../img/illustration.jpeg" alt="test img">
+        <h3>Making music lessons affordable</h3>
+        <p class="teaser">This teacher used income data to make her music lessons affordable for all students.</p>
+      </div>
+
+      <div class="usa-width-one-third content-container">
+        <img src="../img/illustration.jpeg" alt="test img">
+        <h3>Making music lessons affordable</h3>
+        <p class="teaser">This teacher used income data to make her music lessons affordable for all students.</p>
+      </div>
+
+      <div class="usa-width-one-third content-container">
+        <img src="../img/illustration.jpeg" alt="test img">
+        <h3>Article title</h3>
+        <p class="teaser">Blurb here</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="usa-section">
+  </section>
+
+
+
+
+</main>
+
+
+<!-- Footer -->
+@@include('../inc/footer.html')
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>
