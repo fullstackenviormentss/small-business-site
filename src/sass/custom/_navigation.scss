@@ -1,46 +1,67 @@
 // navigation 2 sandbox
-
-.dropdown {
-	
-
-	
-	button {
-		background-color: $color-white;
-		color: $color-gray-dark;
-		border-radius: 0;
-
-		&:hover {
-			background-color: $color-primary;
-			color: $color-white;
-		}
-	}
-
-	&:hover .dropdown-menu {
+#nav-desktop {
+	display: none;
+	@include media($large-screen) {
 		display: block;
 	}
 }
 
-.dropdown-list {
-	position: relative;
-	display: inline-block;
-
-	.dropdown-menu {
-		position: absolute;
+#nav-mobile {
+	display: block;
+	@include media($large-screen) {
 		display: none;
-		top: 100%;
-		left: 0;
-		margin: 0;
+	}
+}
 
+.usa-nav-primary {
+
+	li {
 		list-style: none;
+
+		a {
+			color: $color-gray-dark;
+		}
+	}
+}
+
+.usa-nav-link:hover span {
+	border: none;
+}
+
+.sub-nav-container {
+	display: none;
+	position: absolute;
+	background-color: white;
+	border-bottom: 5px solid $color-primary;
+	border-top: 5px solid $color-primary;
+
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	a {
+		display: block;
 		width: 100%;
+	}
+
+	.sub-nav-link {
+
 
 	}
 }
 
 
+.usa-nav-link {
+	display: inline-block;
+
+}
+
 
 
 // real nav
+
+
 .user-tag {
 	display: inline-block;
 
@@ -59,6 +80,28 @@
 
 
 // Side navigation
+.usa-sidenav-list {
+	a{
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		&:hover {
+			background-color: $color-white;
+			color: $color-gray-dark;
+			font-weight: $font-bold;
+		}
+		
+	}
+}
+
+
+a {
+	&:focus {
+		box-shadow: none;
+	}
+}
 
 .usa-layout-docs {
 	display: flex;
@@ -102,16 +145,24 @@
 	
 }
 
+
 .usa-layout-docs-main_content {
 	position: relative;
 	float: right;
 	margin: auto;
-	padding-left: 2%;
+	padding-left: 4%;
+	border-left: 5px solid $color-gray-lightest;
 
 
 	h1, h2, h3 {
 		font-family: $font-sans;
 		font-weight: $font-bold;
+	}
+
+	h4 {
+		font-family: $font-sans;
+		font-weight: $font-normal;
+		font-style: italic;
 	}
 
 	.img-container {

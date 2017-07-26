@@ -30,6 +30,18 @@ hash = function(h){
 
 // scrollspy section
 $(function($){
+  
+  $('.all-links').hover(function(e){
+    $(this).children('.sub-nav-container').eq(0).slideDown(200);
+    $(this).css("background-color", "#dce4ef");
+
+    }, function(e) {
+      $(this).css("background-color", "white");
+      $(this).children('.sub-nav-container').eq(0).slideUp(200);
+  });
+
+  
+
   //variable that will hold the href attr of the links in the menu
   var sections = [];
   //variable that stores the id of the section
@@ -74,7 +86,6 @@ $(function($){
       $('.usa-sidenav-list a[href="#' + id + '"]').addClass('current'); 
     }
   });
-
 
 
 });

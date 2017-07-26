@@ -37,113 +37,170 @@
     </div>
   </div>
 
-  <!-- Nav -->
-    <div class="usa-navbar">
-    <button class="usa-menu-btn">Menu</button>
-    <div class="usa-logo" id="logo">
-      <a href="#"><img src="img/census-logo-white.svg" alt="Census Bureau logo white"></a>
-    </div>
+  <!-- NAvigation -->
 
-    <!--
-    <div class="user-tag">
-      <p>for small business</p>
-    </div>
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="#"><img src="img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+  </div>
+</div>
 
-    -->
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="html/new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="html/business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="html/find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="html/naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="html/grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="html/my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="html/my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="html/build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="html/survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="html/article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="html/cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="html/stories-home.html"><li class="sub-nav-link">Success Stories</li></a>
+          <a href="html/videos-home.html"><li class="sub-nav-link">Video Tutorials</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="html/advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
   </div>
 
-  <nav role="navigation" class="usa-nav">
-    <div class="usa-nav-inner">
-      <ul class="usa-nav-primary usa-accordion">
-        <li>
-          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
-            <span>Start a Business</span>
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+  
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
           </button>
-            <ul id="side-nav-1" class="usa-nav-submenu">
-              <li>
-                <a href="html/business-plan.html">Business Plan</a>
-              </li>
-              <li>
-                <a href="html/find-a-location.html">Find a Location</a>
-              </li>
-              <li>
-                <a href="html/naics.html">My NAICS Code</a>
-              </li>
-            </ul>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
         </li>
 
         <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
-              <span>Grow a Business</span>
-            </button>
-            <ul id="sidenav-2" class="usa-nav-submenu">
-              <li>
-                <a href="html/my-customers.html">My Customers</a>
-              </li>
-              <li>
-                <a href="html/my-competitors.html">My Competitors</a>
-              </li>
-              <li>
-                <a href="html/build-a-report.html">Build a Report</a>
-              </li>
-              <li>
-                <a href="html/survey-help.html">Survey Help</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
-              <span>Explore Resources</span>
-            </button>
-            <ul id="sidenav-3" class="usa-nav-submenu">
-              <li>
-                <a href="#">Success Stories</a>
-              </li>
-              <li>
-                <a href="#">Business Builder</a>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
-              <span>Get Advice</span>
-            </button>
-            <ul id="sidenav-4" class="usa-nav-submenu">
-              <li>
-                <a href="#">Find a DDS</a>
-              </li>
-              <li>
-                <a href="#">Get an Advisor</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
-            </ul>
-          </li>
-      </ul>
-    </div>
-
-    <div class="usa-nav-secondary">
-          <form class="usa-search usa-search-small js-search-form">
-            <div role="search">
-              <label class="usa-sr-only" for="search-field-small">Search small</label>
-              <input id="search-field-small" type="search" name="search">
-              <button type="submit">
-                <span class="usa-sr-only">Search</span>
-              </button>
-            </div>
-          </form>
-          <ul class="usa-unstyled-list usa-nav-secondary-links">
-            <li class="js-search-button-container">
-              <button class="usa-header-search-button js-search-button">Search</button>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="cbb.html">Census Business Builder</a>
+            </li>
+            <li>
+              <a href="stories-home.html">Success Stories</a>
+            </li>
+            <li>
+              <a href="videos-home.html">Video Tutorials</a>
             </li>
           </ul>
-        </div>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
+            <span>Get Advice</span>
+          </button>
+          <ul id="sidenav-4" class="usa-nav-submenu">
+          </ul>
+        </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
       </div>
-  </nav>
-  <!--End of Nav-->
+    </div>
+</nav>
+
+  <!-- End of navigation -->
 
   <div class="usa-overlay"></div>
 
@@ -157,6 +214,38 @@
         </div>
       </div>
     </section>
+
+
+
+    <section class="usa-section three-section-container">
+    <div class="usa-grid">
+      <div class="usa-width-one-whole  title-container">
+        <h3>Success Stories</h3>
+      </div>
+      <div class="usa-width-one-third content-container">
+        <img src="img/illustration.jpeg" alt="test img">
+        <h3>Making music lessons affordable</h3>
+        <p class="teaser">This teacher used income data to make her music lessons affordable for all students.</p>
+      </div>
+
+      <div class="usa-width-one-third content-container">
+        <img src="img/illustration.jpeg" alt="test img">
+        <h3>Making music lessons affordable</h3>
+        <p class="teaser">This teacher used income data to make her music lessons affordable for all students.</p>
+      </div>
+
+      <div class="usa-width-one-third content-container">
+        <img src="img/illustration.jpeg" alt="test img">
+        <h3>Article title</h3>
+        <p class="teaser">Blurb here</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--
+
     <section class="usa-section usa-section-light">
       <div class="usa-grid center-text">
         <div class="usa-width-one-whole">
@@ -197,7 +286,7 @@
     </section>
 
     
-    <!--
+    
     <section class="usa-section usa-section-dark usa-graphic_list">
       <div class="usa-grid usa-graphic_list-row">
         <div class="usa-width-one-half usa-media_block">
@@ -242,7 +331,53 @@
 
   -->
   </main>
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Primary link</a>
+          </li>
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Permanently relevant</a>
+          </li>
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Easy to understand</a>
+          </li>
+          <li class="usa-width-one-fourth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="javascript:void(0);">Site policies (example)</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+        <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image">
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <a class="usa-link-facebook" href="javascript:void(0);">
+          <span>Facebook</span>
+        </a>
+        <a class="usa-link-twitter" href="javascript:void(0);">
+          <span>Twitter</span>
+        </a>
+        <a class="usa-link-youtube" href="javascript:void(0);">
+          <span>YouTube</span>
+        </a>
+        <a class="usa-link-rss" href="javascript:void(0);">
+          <span>RSS</span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
   
 
 </body>

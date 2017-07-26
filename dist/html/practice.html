@@ -23,6 +23,11 @@
 <!-- End of Head -->
 
 
+
+<script src="https://cdn.rawgit.com/uscensusbureau/citysdk/gh-pages/static/js/citysdk/core/citysdk.js"></script>
+<script src="https://cdn.rawgit.com/uscensusbureau/citysdk/gh-pages/static/js/citysdk/modules/census.citysdk.js"></script>
+<script src="../js/test.js"></script>
+
 <body>
 
   <!-- Nav -->
@@ -191,55 +196,15 @@
 
   <div class="usa-overlay"></div>
 
+  <div id="rawOutput"></div>
+
   <main id="main-content">
-    <section class="usa-hero">
-      <div class="usa-grid">
-        <div class="featured-content usa-width-two-thirds">
-          <h3>Making Music Lessons Affordable</h3>
-          <p>This teacher used income data to make her music lessons affordable for all students.</p>
-          <a class="usa-button usa-button-big usa-button-primary" href="#">Read more</a>
-        </div>
-        <div class="usa-width-one-third">
-          
-          <a href="business-plan.html" class="box-link">
-            <div class="featured-link">
-              <div class="featured-link-icon">
-                <img src="../img/bplan.svg" alt="business plan icon">
-              </div>
-              <div class="featured-link-text-container">
-                <h3>Business Plan</h3>
-                <p>Find data to inform your business plan</p>
-              </div>
-            </div>
-          </a>
-          
-          <a href="find-a-location.html" class="box-link">
-            <div class="featured-link">
-              <div class="featured-link-icon">
-                <img src="../img/location.svg" alt="business plan icon">
-              </div>
-              <div class="featured-link-text-container">
-                <h3>Find a Location</h3>
-                <p>Discover the perfect place for your office</p>
-              </div>
-            </div>
-          </a>
 
-          <a href="naics.html" class="box-link">
-            <div class="featured-link">
-              <div class="featured-link-icon">
-                <img src="../img/industry.svg" alt="business plan icon">
-              </div>
-              <div class="featured-link-text-container">
-                <h3>My NAICS Code</h3>
-                <p>Choose the right code for your business</p>
-              </div>
-            </div>
-          </a>
+    <section id="fetch">
+      <input type="text" placeholder="Enter your zipcode" id="zipcode" />
+      <button id="search">Find my data</button>
+   </section>
 
-        </div>
-      </div>
-    </section>
 
     <section class="cbb-input">
       <div class="usa-grid">
@@ -278,8 +243,6 @@
       </form>
     </section>
 
-    <section class="usa-section">
-    </section>
     
   </main>
 <!-- Footer -->

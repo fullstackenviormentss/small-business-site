@@ -5,9 +5,74 @@
   </div>
 </div>
 
-
-<nav role="navigation" class="usa-nav">
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
   <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="stories-home.html"><li class="sub-nav-link">Success Stories</li></a>
+          <a href="videos-home.html"><li class="sub-nav-link">Video Tutorials</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
     <ul class="usa-nav-primary usa-accordion">
       <li>
         
@@ -26,6 +91,7 @@
             </li>
           </ul>
       </li>
+  
 
       <li>
           <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
@@ -53,10 +119,13 @@
           </button>
           <ul id="sidenav-3" class="usa-nav-submenu">
             <li>
-              <a href="#">Success Stories</a>
+              <a href="cbb.html">Census Business Builder</a>
             </li>
             <li>
-              <a href="#">Business Builder</a>
+              <a href="stories-home.html">Success Stories</a>
+            </li>
+            <li>
+              <a href="videos-home.html">Video Tutorials</a>
             </li>
           </ul>
         </li>
@@ -66,15 +135,6 @@
             <span>Get Advice</span>
           </button>
           <ul id="sidenav-4" class="usa-nav-submenu">
-            <li>
-              <a href="#">Find a DDS</a>
-            </li>
-            <li>
-              <a href="#">Get an Advisor</a>
-            </li>
-            <li>
-              <a href="#">Contact us</a>
-            </li>
           </ul>
         </li>
     </ul>
@@ -98,29 +158,3 @@
       </div>
     </div>
 </nav>
-
-<!--
-<div class="">
-  <ul class="dropdown">
-    <li class="dropdown-list">
-      <a href="my-customers.html"><button>Navigate</button></a>
-      <ul class="dropdown-menu">
-        <a href="#"><li>Link 1</li></a>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </li>
-
-    <li class="dropdown-list">
-      <a href="my-customers.html"><button>Navigate</button></a>
-      <ul class="dropdown-menu">
-        <a href="#"><li>Link 1</li></a>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </li>
-
-  </ul>
-  
-</div>
--->

@@ -12,7 +12,7 @@
 <body>
 
   <!-- Nav -->
-  @@include('../inc/navigation.html', {
+  @@include('../inc/navigation-2.html', {
     "index": "false"
   })
   <!--End of Nav-->
@@ -72,20 +72,20 @@
     <section class="cbb-input">
       <div class="usa-grid">
         <div class="usa-width-one-whole">
-          <h3>Find the best data on your customers and competitors</h3>
+          <h2>Find the best data on your customers and competitors</h2>
         </div>
       </div>
 
       <div class="usa-grid">
         <form action="https://cbb.census.gov/sbe/#industry0=7224&geoId=77059&geoType=zcta&view=report&reportType=summary" target="_blank" method="get">
 
-        <div class="input-container usa-width-one-half">
+        <div class="input-container usa-width-one-whole">
           <label for="industry">My Industry (NAICS)</label>
           <input type="text" id="industry" name="industry0">
           <a href="#"><p>Don't know your NAICS code?</p></a>
         </div>
         
-        <div class="input-container usa-width-one-half">
+        <div class="input-container usa-width-one-whole">
           <label for="location">Location</label>
           <input type="text" id="location" name="geoId">
           <a href="#"><p>Use current location</p></a>
@@ -109,53 +109,10 @@
     <section class="usa-section">
     </section>
     
-    <!--
-    <section class="usa-section usa-section-dark usa-graphic_list">
-      <div class="usa-grid usa-graphic_list-row">
-        <div class="usa-width-one-half usa-media_block">
-          <img class="usa-media_block-img"  src="/assets/img/circle-124.png" alt="Alt text">
-          <div class="usa-media_block-body">
-            <h3>Graphic headings can vary.</h3>
-            <p>Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.</p>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <img class="usa-media_block-img"  src="/assets/img/circle-124.png" alt="Alt text">
-          <div class="usa-media_block-body">
-            <h3>Stick to 6 or fewer words.</h3>
-            <p>Keep body text to about 30. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.</p>
-          </div>
-        </div>
-      </div>
-      <div class="usa-grid usa-graphic_list-row">
-        <div class="usa-width-one-half usa-media_block">
-          <img class="usa-media_block-img"  src="/assets/img/circle-124.png" alt="Alt text">
-          <div class="usa-media_block-body">
-            <h3>Never highlight anything without a goal.</h3>
-            <p>For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.</p>
-          </div>
-        </div>
-        <div class="usa-width-one-half usa-media_block">
-          <img class="usa-media_block-img"  src="/assets/img/circle-124.png" alt="Alt text">
-          <div class="usa-media_block-body">
-            <h3>Could also have 2 or 6.</h3>
-            <p>In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="usa-section">
-      <div class="usa-grid">
-        <h2>Section heading</h2>
-        <p class="usa-font-lead">Everything up to this point should help people understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.</p>
-        <a class="usa-button usa-button-big" href="#">Call to action</a>
-      </div>
-    </section>
-
-  -->
   </main>
-
-  
+<!-- Footer -->
+@@include('../inc/footer.html')
+<!-- End of Footer -->
 
 </body>
 <script src="../js/uswds.min.js"> </script>
