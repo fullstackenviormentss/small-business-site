@@ -1,8 +1,14 @@
 // data-section
 #data-results-section {
 	display: none;
-	background-color: $color-primary-darkest;
+	background-color: $color-white;
 }
+
+#data-results-card {
+	background-color: $color-gray-lightest;
+	padding: 5%;
+}
+
 #data-section {
 	padding: 10% 5% 2% 5%;
 	min-height: 85vh;
@@ -10,7 +16,7 @@
 	@include media($medium-screen) {
 		padding: 5% 5% 2% 5%;
 	}
-	
+
 	h3 {
 		font-weight: $font-bold;
 		margin-bottom: 5%;
@@ -34,9 +40,12 @@
 #search {
 	height: 75%;
 	margin-top: 5%;
+	width: 100%;
 
 	@include media($medium-screen) {
 		height: 100%;
+		margin-top: 0;
+		width: auto;
 
 	}
 }
@@ -51,33 +60,69 @@
 
 .title {
 	display: block;
-	padding-top: 7%;
+	border-left: 5px solid $color-primary-darker;
+	padding-left: 2%;
+	margin-bottom: 15%;
+	
+	@include media($medium-screen) {
+		margin-bottom: 5%;
+	}
+
+	p {
+		font-family: $font-sans;
+		font-weight: $font-bold;
+		text-transform: uppercase;
+		margin: 0;
+	}
 
 	h2, #city {
-		text-transform: lowercase;
+		margin-top: 1%;
+		
 		font-family: $font-serif;
-		font-weight: $font-bold;
-		font-size: $h2-font-size;
+		font-weight: $font-normal;
+		font-size: $h3-font-size;
 	}
 }
 
 .data-card {
-	padding: 5%;
+	padding: 15% 5% 5% 5%;
+	margin-bottom: 5%;
+	background-color: $color-white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	height: 30rem;
 
+	@include media($medium-screen) {
+		padding: 40% 8% 8% 8%;
+		height: 40rem;
+	}
+
+}
+
+.card-container {
+	margin-bottom: 10%;
 }
 
 .card-number {
-	font-family: $font-serif;
-	font-size: $h1-font-size;
-	color: $color-white;
-
+	font-family: $font-sans;
+	font-size: 3em;
+	margin: 0;
+	color: $color-primary-alt-dark;
+	text-align: center;
 }
 
 .card-title {
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: $font-bold;
+	font-size: $h4-font-size;
+	color: $color-black;
+	margin-bottom: 15%;
 }
 
 .card-description {
-
+	text-align: center;
+	color: $color-gray-dark;
+	font-weight: 300;
+	font-family: $font-sans;
+	font-size: $h4-font-size;
 }

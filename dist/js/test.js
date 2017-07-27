@@ -25,17 +25,26 @@ $(document).ready(function(){
     $.getJSON("https://api.censusreporter.org/1.0/data/show/latest?table_ids=" + employment + "&geo_ids=86000US" + zipcode, function(getEmployment){
         var s = JSON.stringify(getEmployment);
         var employment_num = String.getNumber(s, 'estimate');
-        $('#employment').html(employment_num);
+        $('#employment').html(commaSeparateNumber(employment_num));
     })
 
     $.getJSON("https://api.censusreporter.org/1.0/geo/tiger2015/86000US" + zipcode + "/parents", function(getCity){
       var city = getCity.parents[2].display_name;
       $('#city').html(city);
     })
-    $('#data-section').css("min-height", "40vh")
-    $('#data-results-section').slideDown(300);
 
+    $('#data-section').css("min-height", "60vh");
+    $('#data-results-section').slideDown(300);
+    //$(window).scrollTop($('#data-results-section').offset().top);
+    var target = $('#data-results-section');
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
   };
+
 
   String.getNumber= function(o, s){
     var n = o.indexOf(s);
@@ -46,6 +55,12 @@ $(document).ready(function(){
    
   };
 
+  function commaSeparateNumber(val){
+      while (/(\d+)(\d{3})/.test(val.toString())){
+          val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+      }
+      return val;
+  };
   
 
   // Get user input upon click or enter, return data

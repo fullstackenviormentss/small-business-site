@@ -4,14 +4,12 @@
 	}
 }
 
-.usa-hero {
-	
-}
 
 #landing-hero {
 	background-image: url('../img/hero.jpg');
 	background-position: center;
   	background-size: cover;
+  	min-height: 50rem;
 }
 
 .usa-hero-callout {
@@ -48,6 +46,10 @@
 		text-transform: uppercase;
 		border-radius: 0;
 		padding: 0.8em;
+
+		&:focus {
+			box-shadow: none;
+		}
 	}
 }
 

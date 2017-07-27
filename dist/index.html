@@ -228,43 +228,51 @@
             <input type="text" placeholder="Enter your zipcode" id="zipcode"/>
             <button id="search">Action</button>
         </div>
-
-        <div class="usa-width-one-whole center-text title">
-            <h2 id="city"></h2>
-        </div>
       </div>
     </section>
 
     <section class="usa-section" id="data-results-section">
-        
-        <div class="usa-grid">
-          <div class="usa-width-one-third data-card center-text">
-            <h1 class="card-number" id="income">12345</h1>
-            <h3 class="card-title">Median household income</h3>
-            <p class="card-description"></p>
+        <div class="usa-grid" id="data-results-card">
+          <div class="usa-width-one-whole title">
+            <p>Showing data for</p>
+            <h2 id="city">Oops, that doesn't look like a real zipcode!</h2>
           </div>
 
+          <div class="usa-grid card-container">
+            <div class="usa-width-one-third">
+              <div class="data-card">
+                <h1 class="card-number" id="income">?</h1>
+                <h3 class="card-title">Median household income</h3>
+                <p class="card-description">Income levels can help you determine what types of goods and services your customers can afford.</p>
+              </div>
+              
+            </div>
 
-          <div class="usa-width-one-third data-card center-text">
-            <h1 class="card-number" id="age">12345</h1>
-            <h3 class="card-title">Median Age</h3>
-            <p class="card-description"></p>
+
+            <div class="usa-width-one-third">
+              <div class="data-card">
+                <h1 class="card-number" id="age">?</h1>
+                <h3 class="card-title">Median Age</h3>
+                <p class="card-description">Our data can help you understand the breakdown of ages in your area.</p>
+              </div>
+              
+            </div>
+
+            <div class="usa-width-one-third">
+              <div class="data-card">
+                <h1 class="card-number" id="employment">?</h1>
+                <h3 class="card-title">Employed Individuals</h3>
+                <p class="card-description">This data can help you determine what types of goods and services your customers may be interested in.</p>
+              </div>
+            </div>
           </div>
+          
 
-          <div class="usa-width-one-third data-card center-text">
-            <h1 class="card-number" id="employment">123</h1>
-            <h3 class="card-title">Size of Workforce</h3>
-            <p class="card-description"></p>
-          </div>
-
-        </div>
-
-        <div class="usa-grid">
           <div class="usa-width-one-whole center-text ">
-              <a id="hero-button" class="usa-button usa-button-big usa-button-secondary" href="#data-section">Find more data</a>
+              <a id="hero-button" class="usa-button usa-button-big usa-button-secondary" href="cbb.html">GET MORE DATA</a>
           </div>
-        </div>
 
+        </div>
       
     </section>
 

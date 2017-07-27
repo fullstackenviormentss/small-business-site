@@ -5281,14 +5281,15 @@ a:focus {
   color: #ffffff;
 }
 
-/* line 11, src/sass/custom/_hero.scss */
+/* line 8, src/sass/custom/_hero.scss */
 #landing-hero {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
+  min-height: 50rem;
 }
 
-/* line 17, src/sass/custom/_hero.scss */
+/* line 15, src/sass/custom/_hero.scss */
 .usa-hero-callout {
   background-color: #ffffff;
   min-height: 40rem;
@@ -5306,27 +5307,27 @@ a:focus {
 }
 
 @media screen and (min-width: 481px) {
-  /* line 17, src/sass/custom/_hero.scss */
+  /* line 15, src/sass/custom/_hero.scss */
   .usa-hero-callout {
     max-width: 100%;
   }
 }
 
-/* line 32, src/sass/custom/_hero.scss */
+/* line 30, src/sass/custom/_hero.scss */
 .usa-hero-callout h2 {
   color: #112e51;
   font-size: 2.9em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-/* line 38, src/sass/custom/_hero.scss */
+/* line 36, src/sass/custom/_hero.scss */
 .usa-hero-callout p {
   margin-top: 2rem;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2rem;
 }
 
-/* line 44, src/sass/custom/_hero.scss */
+/* line 42, src/sass/custom/_hero.scss */
 .usa-hero-callout .usa-button {
   margin-top: 1rem;
   width: auto;
@@ -5336,7 +5337,12 @@ a:focus {
   padding: 0.8em;
 }
 
-/* line 54, src/sass/custom/_hero.scss */
+/* line 50, src/sass/custom/_hero.scss */
+.usa-hero-callout .usa-button:focus {
+  box-shadow: none;
+}
+
+/* line 56, src/sass/custom/_hero.scss */
 .usa-hero-callout-alt {
   color: #323a45;
   font-size: 1.8em;
@@ -5392,7 +5398,7 @@ a:focus {
 
 /* line 41, src/sass/custom/_section.scss */
 .three-section-container {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 
 /* line 45, src/sass/custom/_section.scss */
@@ -5696,36 +5702,42 @@ input:-moz-placeholder {
 /* line 2, src/sass/custom/_data.scss */
 #data-results-section {
   display: none;
-  background-color: #112e51;
+  background-color: #ffffff;
 }
 
-/* line 6, src/sass/custom/_data.scss */
+/* line 7, src/sass/custom/_data.scss */
+#data-results-card {
+  background-color: #f1f1f1;
+  padding: 5%;
+}
+
+/* line 12, src/sass/custom/_data.scss */
 #data-section {
   padding: 10% 5% 2% 5%;
   min-height: 85vh;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 6, src/sass/custom/_data.scss */
+  /* line 12, src/sass/custom/_data.scss */
   #data-section {
     padding: 5% 5% 2% 5%;
   }
 }
 
-/* line 14, src/sass/custom/_data.scss */
+/* line 20, src/sass/custom/_data.scss */
 #data-section h3 {
   font-weight: 700;
   margin-bottom: 5%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 14, src/sass/custom/_data.scss */
+  /* line 20, src/sass/custom/_data.scss */
   #data-section h3 {
     margin-bottom: 2%;
   }
 }
 
-/* line 23, src/sass/custom/_data.scss */
+/* line 29, src/sass/custom/_data.scss */
 #data-section h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -5733,62 +5745,114 @@ input:-moz-placeholder {
   font-size: 2.5rem;
 }
 
-/* line 29, src/sass/custom/_data.scss */
+/* line 35, src/sass/custom/_data.scss */
 #data-section button {
   vertical-align: top;
 }
 
-/* line 34, src/sass/custom/_data.scss */
+/* line 40, src/sass/custom/_data.scss */
 #search {
   height: 75%;
   margin-top: 5%;
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 34, src/sass/custom/_data.scss */
+  /* line 40, src/sass/custom/_data.scss */
   #search {
     height: 100%;
+    margin-top: 0;
+    width: auto;
   }
 }
 
-/* line 44, src/sass/custom/_data.scss */
+/* line 53, src/sass/custom/_data.scss */
 .inline-container {
   height: 4.5em;
 }
 
-/* line 48, src/sass/custom/_data.scss */
+/* line 57, src/sass/custom/_data.scss */
 #zipcode-container {
   margin: 5% 0;
 }
 
-/* line 52, src/sass/custom/_data.scss */
+/* line 61, src/sass/custom/_data.scss */
 .title {
   display: block;
-  padding-top: 7%;
+  border-left: 5px solid #205493;
+  padding-left: 2%;
+  margin-bottom: 15%;
 }
 
-/* line 56, src/sass/custom/_data.scss */
-.title h2, .title #city {
-  text-transform: lowercase;
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+@media screen and (min-width: 600px) {
+  /* line 61, src/sass/custom/_data.scss */
+  .title {
+    margin-bottom: 5%;
+  }
+}
+
+/* line 71, src/sass/custom/_data.scss */
+.title p {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-/* line 64, src/sass/custom/_data.scss */
-.data-card {
-  padding: 5%;
-}
-
-/* line 69, src/sass/custom/_data.scss */
-.card-number {
+/* line 78, src/sass/custom/_data.scss */
+.title h2, .title #city {
+  margin-top: 1%;
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 4rem;
-  color: #ffffff;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
-/* line 76, src/sass/custom/_data.scss */
+/* line 87, src/sass/custom/_data.scss */
+.data-card {
+  padding: 15% 5% 5% 5%;
+  margin-bottom: 5%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  height: 30rem;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 87, src/sass/custom/_data.scss */
+  .data-card {
+    padding: 40% 8% 8% 8%;
+    height: 40rem;
+  }
+}
+
+/* line 101, src/sass/custom/_data.scss */
+.card-container {
+  margin-bottom: 10%;
+}
+
+/* line 105, src/sass/custom/_data.scss */
+.card-number {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 3em;
+  margin: 0;
+  color: #00a6d2;
+  text-align: center;
+}
+
+/* line 113, src/sass/custom/_data.scss */
 .card-title {
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.7rem;
+  color: #000000;
+  margin-bottom: 15%;
+}
+
+/* line 122, src/sass/custom/_data.scss */
+.card-description {
+  text-align: center;
+  color: #323a45;
+  font-weight: 300;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.7rem;
 }
