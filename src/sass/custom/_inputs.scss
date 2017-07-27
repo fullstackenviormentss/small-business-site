@@ -21,13 +21,43 @@ label {
 input {
 	display: inline-block;
 	border: 1px solid $color-gray-light;
-	margin: 1em 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-size: $h2-font-size;
+	font-weight: $font-bold;
+
+	@include media($medium-screen) {
+		width: 50%;
+	}
 
 	&.usa-input-medium {
 		margin: auto;
 		@include media($medium-screen) {
 			max-width: 20rem;
 		}
+	}
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  		font-size: rem(25px);
+  		font-family: $font-sans;
+  		color: $color-gray-light;
+  		font-weight: $font-normal;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	 	font-size: rem(25px);
+  		font-family: $font-sans;
+  		color: $color-gray-light;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	 	font-size: rem(25px);
+  		font-family: $font-sans;
+  		color: $color-gray-light;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	 	font-size: rem(25px);
+  		font-family: $font-sans;
+  		color: $color-gray-light;
 	}
 }
 

@@ -1,4 +1,4 @@
-// navigation 2 sandbox
+// navigation 2
 #nav-desktop {
 	display: none;
 	@include media($large-screen) {
@@ -189,4 +189,12 @@ a {
     padding-left: 1.4rem;
 }
 
+// usa banner
+.usa-banner {
+
+	padding-bottom: 0;
+	@include media($medium-screen) {
+		padding-bottom: 0.7rem;
+	}
+}
 

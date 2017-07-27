@@ -5,19 +5,34 @@
 }
 
 .usa-hero {
-	background-color: $color-white;
+	
+}
+
+#landing-hero {
+	background-image: url('../img/hero.jpg');
+	background-position: center;
+  	background-size: cover;
 }
 
 .usa-hero-callout {
 	background-color: $color-white;
-	padding-top: 5rem;
+	min-height: 40rem;
+	/* opacity: 0.8; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.7+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b3ffffff',GradientType=0 ); /* IE6-9 */
+
+	padding-top: 8rem;
 	@include media($small-screen) {
 		max-width: 100%;
 	}
 
 	h2 {
-		color: $color-gray-dark;
-		font-size: 2.3em;
+		color: $color-primary-darkest;
+		font-size: 2.9em;
+		font-family: $font-sans;
 	}
 
 	p {
@@ -28,7 +43,11 @@
 
 	.usa-button {
 		margin-top: 1rem;
-		width: 75%;
+		width: auto;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		border-radius: 0;
+		padding: 0.8em;
 	}
 }
 

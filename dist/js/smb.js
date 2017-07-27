@@ -1,36 +1,8 @@
-$(window).scroll(function() {
-	var fixSidebar = $('.usa-layout-docs-main_content').offset().top;
-	var contentHeight = $('.usa-layout-docs-main_content').innerHeight();
-	var sidebarHeight = $('.usa-sidenav-list').innerHeight();
-	var footerHeight = $('footer').height();
-	var sidebarBottomPos = contentHeight - sidebarHeight;
-	var trigger = $(window).scrollTop() - fixSidebar;
-
-	if ($(window).scrollTop() >= fixSidebar) {
-		$('.usa-sidenav-list').addClass('fixed');
-	} else {
-		$('.usa-sidenav-list').removeClass('fixed');
-	}
-
-	if (trigger >= sidebarBottomPos) {
-		
-		$('.usa-sidenav-list').addClass('bottom');
-	} else {
-		$('.usa-sidenav-list').removeClass('bottom');
-	}
-});
-
-hash = function(h){
-  if (history.pushState){
-    history.pushState(null, null, h);
-  }else{
-    location.hash = h;
-  }
-};
-
 // scrollspy section
 $(function($){
   
+  // navigation drop down
+
   $('.all-links').hover(function(e){
     $(this).children('.sub-nav-container').eq(0).slideDown(200);
     $(this).css("background-color", "#dce4ef");
@@ -40,6 +12,16 @@ $(function($){
       $(this).children('.sub-nav-container').eq(0).slideUp(200);
   });
 
+  // smooth scroll links on page
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+  });
   
 
   //variable that will hold the href attr of the links in the menu
@@ -86,6 +68,37 @@ $(function($){
       $('.usa-sidenav-list a[href="#' + id + '"]').addClass('current'); 
     }
   });
+
+  $(window).scroll(function() {
+  var fixSidebar = $('.usa-layout-docs-main_content').offset().top;
+  var contentHeight = $('.usa-layout-docs-main_content').innerHeight();
+  var sidebarHeight = $('.usa-sidenav-list').innerHeight();
+  var footerHeight = $('footer').height();
+  var sidebarBottomPos = contentHeight - sidebarHeight;
+  var trigger = $(window).scrollTop() - fixSidebar;
+
+  if ($(window).scrollTop() >= fixSidebar) {
+    $('.usa-sidenav-list').addClass('fixed');
+  } else {
+    $('.usa-sidenav-list').removeClass('fixed');
+  }
+
+  if (trigger >= sidebarBottomPos) {
+    
+    $('.usa-sidenav-list').addClass('bottom');
+  } else {
+    $('.usa-sidenav-list').removeClass('bottom');
+  }
+});
+
+hash = function(h){
+  if (history.pushState){
+    history.pushState(null, null, h);
+  }else{
+    location.hash = h;
+  }
+};
+
 
 
 });

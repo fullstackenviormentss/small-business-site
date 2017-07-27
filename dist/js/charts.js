@@ -12,6 +12,7 @@ Chart({
 */
 
 function Chart(options) {
+    console.log('in chart function');
     var chart = {};
     
     chart.init = function(options) {

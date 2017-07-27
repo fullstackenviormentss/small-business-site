@@ -9,6 +9,8 @@
 })
 <!-- End of Head -->
 
+<script src="js/test.js"></script>
+
 <body>
 
   <!-- USA Banner -->
@@ -23,7 +25,7 @@
     </div>
   </div>
 
-  <!-- NAvigation -->
+  <!-- Navigation -->
 
 <div class="usa-navbar">
   <button class="usa-menu-btn">Menu</button>
@@ -191,16 +193,66 @@
   <div class="usa-overlay"></div>
 
   <main id="main-content">
-    <section class="usa-hero">
+    <section class="usa-hero" id="landing-hero">
       <div class="usa-grid">
         <div class="usa-hero-callout usa-width-one-half">
           <h2>Powerful Data for Your Small Business</h2>
           <p>Start making data-driven decisions, today.</p>
-          <a class="usa-button usa-button-big usa-button-primary" href="#">Start now</a>
+          <a id="hero-button" class="usa-button usa-button-big usa-button-secondary" href="#data-section">Start now</a>
         </div>
       </div>
     </section>
 
+    <section class="usa-section usa-section-light" id="data-section">
+      <div class="usa-grid center-text">
+        <div class="usa-width-one-whole">
+          <h3>Every successful business starts and grows with research.</h3>
+          <h2>Find the best data about your customers and competitors.</h2>
+        </div>
+
+        <div class="usa-width-one-whole inline-container" id="zipcode-container">
+            <input type="text" placeholder="Enter your zipcode" id="zipcode"/>
+            <button id="search">Action</button>
+        </div>
+
+        <div class="usa-width-one-whole center-text title">
+            <h2 id="city"></h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="usa-section" id="data-results-section">
+        
+        <div class="usa-grid">
+          <div class="usa-width-one-third data-card center-text">
+            <h1 class="card-number" id="income">12345</h1>
+            <h3 class="card-title">Median household income</h3>
+            <p class="card-description"></p>
+          </div>
+
+
+          <div class="usa-width-one-third data-card center-text">
+            <h1 class="card-number" id="age">12345</h1>
+            <h3 class="card-title">Median Age</h3>
+            <p class="card-description"></p>
+          </div>
+
+          <div class="usa-width-one-third data-card center-text">
+            <h1 class="card-number" id="employment">123</h1>
+            <h3 class="card-title">Size of Workforce</h3>
+            <p class="card-description"></p>
+          </div>
+
+        </div>
+
+        <div class="usa-grid">
+          <div class="usa-width-one-whole center-text ">
+              <a id="hero-button" class="usa-button usa-button-big usa-button-secondary" href="#data-section">Find more data</a>
+          </div>
+        </div>
+
+      
+    </section>
 
 
     <section class="usa-section three-section-container">

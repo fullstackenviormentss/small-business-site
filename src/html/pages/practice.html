@@ -8,12 +8,8 @@
 })
 <!-- End of Head -->
 
-
-
-<script src="https://cdn.rawgit.com/uscensusbureau/citysdk/gh-pages/static/js/citysdk/core/citysdk.js"></script>
-<script src="https://cdn.rawgit.com/uscensusbureau/citysdk/gh-pages/static/js/citysdk/modules/census.citysdk.js"></script>
+<script src="../js/charts.js"></script>
 <script src="../js/test.js"></script>
-
 <body>
 
   <!-- Nav -->
@@ -24,55 +20,24 @@
 
   <div class="usa-overlay"></div>
 
-  <div id="rawOutput"></div>
 
   <main id="main-content">
 
     <section id="fetch">
-      <input type="text" placeholder="Enter your zipcode" id="zipcode" />
+      <input type="text" placeholder="Enter your zipcode" id="zipcode"/>
       <button id="search">Find my data</button>
-   </section>
-
-   <div class="column-half" id="chart-histogram-demographics-age-distribution_by_decade-total" data-stat-type="scaled-percentage" data-chart-title="Population by age range"></div>
-
-
-    <section class="cbb-input">
-      <div class="usa-grid">
-        <div class="usa-width-one-whole">
-          <h2>Find the best data on your customers and competitors</h2>
-        </div>
-      </div>
-
-      <div class="usa-grid">
-        <form action="https://cbb.census.gov/sbe/#industry0=7224&geoId=77059&geoType=zcta&view=report&reportType=summary" target="_blank" method="get">
-
-        <div class="input-container usa-width-one-whole">
-          <label for="industry">My Industry (NAICS)</label>
-          <input type="text" id="industry" name="industry0">
-          <a href="#"><p>Don't know your NAICS code?</p></a>
-        </div>
-        
-        <div class="input-container usa-width-one-whole">
-          <label for="location">Location</label>
-          <input type="text" id="location" name="geoId">
-          <a href="#"><p>Use current location</p></a>
-        </div>
-      </div>
-
-      <input type="hidden" name="geoType" value="zcta">
-      <input type="hidden" name="view" value="report">
-      <input type="hidden" name="reportType" value="summary">
-
-      <div class="usa-grid">
-        <div class="usa-width-one-whole">
-          <div class="button">
-            <button type="submit">Submit</button>
-          </div>
-        </div>
-      </div>
-      </form>
     </section>
 
+    <section class="usa-section usa-section-dark usa-grid" id="showData">
+      <div class="usa-width-one-half" id="income">
+
+      </div>
+    </section>
+
+
+
+
+    
     
   </main>
 <!-- Footer -->

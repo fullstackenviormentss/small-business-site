@@ -5252,6 +5252,18 @@ a:focus {
   padding-left: 1.4rem;
 }
 
+/* line 193, src/sass/custom/_navigation.scss */
+.usa-banner {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 193, src/sass/custom/_navigation.scss */
+  .usa-banner {
+    padding-bottom: 0.7rem;
+  }
+}
+
 /* line 1, src/sass/custom/_header.scss */
 .usa-logo img {
   height: 1.5rem;
@@ -5269,44 +5281,62 @@ a:focus {
   color: #ffffff;
 }
 
-/* line 7, src/sass/custom/_hero.scss */
-.usa-hero {
-  background-color: #ffffff;
+/* line 11, src/sass/custom/_hero.scss */
+#landing-hero {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-/* line 11, src/sass/custom/_hero.scss */
+/* line 17, src/sass/custom/_hero.scss */
 .usa-hero-callout {
   background-color: #ffffff;
-  padding-top: 5rem;
+  min-height: 40rem;
+  /* opacity: 0.8; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.7+100 */
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  /* IE6-9 */
+  padding-top: 8rem;
 }
 
 @media screen and (min-width: 481px) {
-  /* line 11, src/sass/custom/_hero.scss */
+  /* line 17, src/sass/custom/_hero.scss */
   .usa-hero-callout {
     max-width: 100%;
   }
 }
 
-/* line 18, src/sass/custom/_hero.scss */
+/* line 32, src/sass/custom/_hero.scss */
 .usa-hero-callout h2 {
-  color: #323a45;
-  font-size: 2.3em;
+  color: #112e51;
+  font-size: 2.9em;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-/* line 23, src/sass/custom/_hero.scss */
+/* line 38, src/sass/custom/_hero.scss */
 .usa-hero-callout p {
   margin-top: 2rem;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2rem;
 }
 
-/* line 29, src/sass/custom/_hero.scss */
+/* line 44, src/sass/custom/_hero.scss */
 .usa-hero-callout .usa-button {
   margin-top: 1rem;
-  width: 75%;
+  width: auto;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.8em;
 }
 
-/* line 35, src/sass/custom/_hero.scss */
+/* line 54, src/sass/custom/_hero.scss */
 .usa-hero-callout-alt {
   color: #323a45;
   font-size: 1.8em;
@@ -5318,27 +5348,22 @@ a:focus {
   margin: auto;
 }
 
-/* line 1, src/sass/custom/_section.scss */
-.usa-hero {
-  height: 50rem;
-}
-
-/* line 7, src/sass/custom/_section.scss */
+/* line 3, src/sass/custom/_section.scss */
 .usa-section-light .image-container {
   padding: 1%;
 }
 
-/* line 9, src/sass/custom/_section.scss */
+/* line 5, src/sass/custom/_section.scss */
 .usa-section-light .image-container img {
   width: 100%;
 }
 
-/* line 14, src/sass/custom/_section.scss */
+/* line 10, src/sass/custom/_section.scss */
 .usa-section-light .text-container {
   padding: 1%;
 }
 
-/* line 17, src/sass/custom/_section.scss */
+/* line 13, src/sass/custom/_section.scss */
 .usa-section-light .text-container .article-tag {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #323a45;
@@ -5349,14 +5374,14 @@ a:focus {
   padding-bottom: 2%;
 }
 
-/* line 27, src/sass/custom/_section.scss */
+/* line 23, src/sass/custom/_section.scss */
 .usa-section-light .text-container h1 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #323a45;
   margin: 0;
 }
 
-/* line 33, src/sass/custom/_section.scss */
+/* line 29, src/sass/custom/_section.scss */
 .usa-section-light .text-container h5 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   color: #323a45;
@@ -5365,12 +5390,12 @@ a:focus {
   padding-bottom: 2%;
 }
 
-/* line 45, src/sass/custom/_section.scss */
+/* line 41, src/sass/custom/_section.scss */
 .three-section-container {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
-/* line 49, src/sass/custom/_section.scss */
+/* line 45, src/sass/custom/_section.scss */
 .three-section-container .title-container {
   width: 100%;
   display: block;
@@ -5378,26 +5403,26 @@ a:focus {
   margin-bottom: 3%;
 }
 
-/* line 55, src/sass/custom/_section.scss */
+/* line 51, src/sass/custom/_section.scss */
 .three-section-container .title-container h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 62, src/sass/custom/_section.scss */
+/* line 58, src/sass/custom/_section.scss */
 .three-section-container .content-container {
   background-color: #f1f1f1;
   padding: 2%;
   height: 100%;
 }
 
-/* line 67, src/sass/custom/_section.scss */
+/* line 63, src/sass/custom/_section.scss */
 .three-section-container .content-container img {
   width: 100%;
 }
 
-/* line 71, src/sass/custom/_section.scss */
+/* line 67, src/sass/custom/_section.scss */
 .three-section-container .content-container h3 {
   margin: 0;
   font-weight: 700;
@@ -5427,29 +5452,73 @@ label {
 input {
   display: inline-block;
   border: 1px solid #aeb0b5;
-  margin: 1em 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-/* line 26, src/sass/custom/_inputs.scss */
+@media screen and (min-width: 600px) {
+  /* line 21, src/sass/custom/_inputs.scss */
+  input {
+    width: 50%;
+  }
+}
+
+/* line 34, src/sass/custom/_inputs.scss */
 input.usa-input-medium {
   margin: auto;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 26, src/sass/custom/_inputs.scss */
+  /* line 34, src/sass/custom/_inputs.scss */
   input.usa-input-medium {
     max-width: 20rem;
   }
 }
 
+/* line 41, src/sass/custom/_inputs.scss */
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 2.5rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #aeb0b5;
+  font-weight: 400;
+}
+
+/* line 47, src/sass/custom/_inputs.scss */
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 2.5rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #aeb0b5;
+}
+
+/* line 52, src/sass/custom/_inputs.scss */
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 2.5rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #aeb0b5;
+}
+
+/* line 57, src/sass/custom/_inputs.scss */
+input:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 2.5rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #aeb0b5;
+}
+
 @media screen and (min-width: 600px) {
-  /* line 35, src/sass/custom/_inputs.scss */
+  /* line 65, src/sass/custom/_inputs.scss */
   .usa-form-large {
     max-width: 100%;
   }
 }
 
-/* line 42, src/sass/custom/_inputs.scss */
+/* line 72, src/sass/custom/_inputs.scss */
 .cbb-input {
   background-color: #f1f1f1;
   height: 40rem;
@@ -5458,7 +5527,7 @@ input.usa-input-medium {
   margin-top: 3%;
 }
 
-/* line 49, src/sass/custom/_inputs.scss */
+/* line 79, src/sass/custom/_inputs.scss */
 .cbb-input h2 {
   text-align: center;
   color: #323a45;
@@ -5467,23 +5536,23 @@ input.usa-input-medium {
   font-weight: 400;
 }
 
-/* line 58, src/sass/custom/_inputs.scss */
+/* line 88, src/sass/custom/_inputs.scss */
 .input-container {
   padding: 5% 0;
 }
 
-/* line 61, src/sass/custom/_inputs.scss */
+/* line 91, src/sass/custom/_inputs.scss */
 .input-container h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400;
 }
 
-/* line 67, src/sass/custom/_inputs.scss */
+/* line 97, src/sass/custom/_inputs.scss */
 .input-container a {
   text-decoration: none;
 }
 
-/* line 70, src/sass/custom/_inputs.scss */
+/* line 100, src/sass/custom/_inputs.scss */
 .input-container a p {
   margin: 0;
 }
@@ -5622,4 +5691,104 @@ input.usa-input-medium {
 /* line 1, src/sass/custom/_grid.scss */
 .usa-grid-wide {
   max-width: 1200px;
+}
+
+/* line 2, src/sass/custom/_data.scss */
+#data-results-section {
+  display: none;
+  background-color: #112e51;
+}
+
+/* line 6, src/sass/custom/_data.scss */
+#data-section {
+  padding: 10% 5% 2% 5%;
+  min-height: 85vh;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 6, src/sass/custom/_data.scss */
+  #data-section {
+    padding: 5% 5% 2% 5%;
+  }
+}
+
+/* line 14, src/sass/custom/_data.scss */
+#data-section h3 {
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 14, src/sass/custom/_data.scss */
+  #data-section h3 {
+    margin-bottom: 2%;
+  }
+}
+
+/* line 23, src/sass/custom/_data.scss */
+#data-section h2 {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* line 29, src/sass/custom/_data.scss */
+#data-section button {
+  vertical-align: top;
+}
+
+/* line 34, src/sass/custom/_data.scss */
+#search {
+  height: 75%;
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 34, src/sass/custom/_data.scss */
+  #search {
+    height: 100%;
+  }
+}
+
+/* line 44, src/sass/custom/_data.scss */
+.inline-container {
+  height: 4.5em;
+}
+
+/* line 48, src/sass/custom/_data.scss */
+#zipcode-container {
+  margin: 5% 0;
+}
+
+/* line 52, src/sass/custom/_data.scss */
+.title {
+  display: block;
+  padding-top: 7%;
+}
+
+/* line 56, src/sass/custom/_data.scss */
+.title h2, .title #city {
+  text-transform: lowercase;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+/* line 64, src/sass/custom/_data.scss */
+.data-card {
+  padding: 5%;
+}
+
+/* line 69, src/sass/custom/_data.scss */
+.card-number {
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+/* line 76, src/sass/custom/_data.scss */
+.card-title {
+  text-transform: uppercase;
+  font-weight: 700;
 }

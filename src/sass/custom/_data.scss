@@ -1,0 +1,83 @@
+// data-section
+#data-results-section {
+	display: none;
+	background-color: $color-primary-darkest;
+}
+#data-section {
+	padding: 10% 5% 2% 5%;
+	min-height: 85vh;
+
+	@include media($medium-screen) {
+		padding: 5% 5% 2% 5%;
+	}
+	
+	h3 {
+		font-weight: $font-bold;
+		margin-bottom: 5%;
+
+		@include media($medium-screen) {
+			margin-bottom: 2%;
+		}
+	}
+
+	h2 {
+		font-family: $font-sans;
+		font-weight: $font-normal;
+		margin: 0;
+		font-size: rem(25px);
+	}
+	button {
+		vertical-align: top;
+	}
+}
+
+#search {
+	height: 75%;
+	margin-top: 5%;
+
+	@include media($medium-screen) {
+		height: 100%;
+
+	}
+}
+
+.inline-container {
+	height: 4.5em;
+}
+
+#zipcode-container {
+	margin: 5% 0;
+}
+
+.title {
+	display: block;
+	padding-top: 7%;
+
+	h2, #city {
+		text-transform: lowercase;
+		font-family: $font-serif;
+		font-weight: $font-bold;
+		font-size: $h2-font-size;
+	}
+}
+
+.data-card {
+	padding: 5%;
+
+}
+
+.card-number {
+	font-family: $font-serif;
+	font-size: $h1-font-size;
+	color: $color-white;
+
+}
+
+.card-title {
+	text-transform: uppercase;
+	font-weight: $font-bold;
+}
+
+.card-description {
+
+}
