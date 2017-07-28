@@ -2,6 +2,10 @@
 #data-results-section {
 	display: none;
 	background-color: $color-white;
+
+	button {
+		border-radius: 0;
+	}
 }
 
 #data-results-card {
@@ -116,7 +120,11 @@
 	font-weight: $font-bold;
 	font-size: $h4-font-size;
 	color: $color-black;
-	margin-bottom: 15%;
+	margin-bottom: 5%;
+	
+	@include media($medium-screen) {
+		margin-bottom: 15%;
+	}
 }
 
 .card-description {

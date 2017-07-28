@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+
+  <!--
+
+      Built by Coding it Forward Fellows 
+      (https://www.codingitforward.com/)
+
+    -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Census Business Builder</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/smb.css">
+  	<script src="../js/jquery.min.js"></script>
+    <script src="../js/uswds.min.js"></script>
+    <script src="../js/smb.js"></script> 
+	
+
+</head>
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+  </div>
+</div>
+
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="stories-home.html"><li class="sub-nav-link">Success Stories</li></a>
+          <a href="videos-home.html"><li class="sub-nav-link">Video Tutorials</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+  
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
+          </button>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="cbb.html">Census Business Builder</a>
+            </li>
+            <li>
+              <a href="stories-home.html">Success Stories</a>
+            </li>
+            <li>
+              <a href="videos-home.html">Video Tutorials</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-4">
+            <span>Get Advice</span>
+          </button>
+          <ul id="sidenav-4" class="usa-nav-submenu">
+          </ul>
+        </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#cbb-0">Census Business Builder</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#cbb-1'>Step one: Select your business type</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#cbb-2'>Step two: Choose your location </a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <a class="" href= '#cbb-3'>Step three: Find your data</a>
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#cbb-3a'>Option 1: Use the Map</a>
+          </li>
+          <li>
+            <a href= '#cbb-3b'>Option 2: Create a Report</a>
+          </li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="cbb-0">Using Census Business Builder</h1>
+    <p class="usa-font-lead">The Census Business Builder (CBB) is a one-stop resource for information about your customers, competition, and community. This guide will help you find the data you need.</p>
+    
+    <div class="img-container">
+      <img src="../img/illustration.jpeg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="cbb-1">Step one: Select your business type</h2>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Choose an industry category or type in an industry title, <a href="naics.html" target="_blank">NAICS code</a>, or keyword to find your business type.</p>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 id="cbb-2">Step two: Choose your location</h2>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Use CBB’s location tool to locate yourself or type in a town, city, zip code, county, or state. You can change your selected location at any point.</p>
+        <p class="tip">Tip: Some industry data is not available at the zipcode level to protect the privacy of our survey respondents. If you’d like to view this type of data, please use a city, county, or state. You can always change your location later.</p>
+      </div>
+    </div>
+    
+
+    <!-- Section 3 -->
+    <h2 id="cbb-3">Step three: Find your data</h2>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>CBB provides two options for discovering data — a map and a report. You can use either to find data about your industry and location.</p>
+        <p class="tip">Learn more about the data related to <a href="my-customers.html" target="_blank">your customers</a>, <a href="my-competitors.html" target="_blank">your competition</a>, or <a href="find-a-location.html" target="_blank">finding a location.</a></p>
+      </div>
+    </div>
+
+    <!-- Option 1 map -->
+    <h3 id="cbb-3a">Option 1: Use the Map</h3>
+      <p>This method creates a visual representation of your data.</p>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Click on the “Go to Map” button to launch a map of your location</p>
+      </div>
+    </div>
+
+    <!-- Option 2 report -->
+    <h3 id="cbb-3b">Option 2: Create a Report</h3>
+      <p>This method allows you to view data in a printable report format. However, you cannot view data related to several zip codes at one time.</p>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Click the “Create Report” button to load your report</p>
+      </div>
+    </div>
+
+    
+
+    <h2>Ready to get started?</h2>
+    <p>Launch the Census Business Builder to find your data now</p>
+    <a class="usa-button usa-button-big usa-button-primary" href="https://cbb.census.gov/sbe/#" target="_blank">Find your data</a>
+
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+
+         
+
+        
+          <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image"> 
+        
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <a class="usa-link-facebook" href="javascript:void(0);">
+          <span>Facebook</span>
+        </a>
+        <a class="usa-link-twitter" href="javascript:void(0);">
+          <span>Twitter</span>
+        </a>
+        <a class="usa-link-youtube" href="javascript:void(0);">
+          <span>YouTube</span>
+        </a>
+        <a class="usa-link-rss" href="javascript:void(0);">
+          <span>RSS</span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

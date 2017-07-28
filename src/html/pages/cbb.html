@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+@@include('../inc/head.html', {
+  "index": "false",
+  "description": " 'Metadata description' ",
+  "title": "Census Business Builder"
+})
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+@@include('../inc/navigation-2.html', {
+  "index": "false"
+})
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#cbb-0">Census Business Builder</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#cbb-1'>Step one: Select your business type</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#cbb-2'>Step two: Choose your location </a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <a class="" href= '#cbb-3'>Step three: Find your data</a>
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#cbb-3a'>Option 1: Use the Map</a>
+          </li>
+          <li>
+            <a href= '#cbb-3b'>Option 2: Create a Report</a>
+          </li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="cbb-0">Using Census Business Builder</h1>
+    <p class="usa-font-lead">The Census Business Builder (CBB) is a one-stop resource for information about your customers, competition, and community. This guide will help you find the data you need.</p>
+    
+    <div class="img-container">
+      <img src="../img/illustration.jpeg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="cbb-1">Step one: Select your business type</h2>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Choose an industry category or type in an industry title, <a href="naics.html" target="_blank">NAICS code</a>, or keyword to find your business type.</p>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 id="cbb-2">Step two: Choose your location</h2>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Use CBB’s location tool to locate yourself or type in a town, city, zip code, county, or state. You can change your selected location at any point.</p>
+        <p class="tip">Tip: Some industry data is not available at the zipcode level to protect the privacy of our survey respondents. If you’d like to view this type of data, please use a city, county, or state. You can always change your location later.</p>
+      </div>
+    </div>
+    
+
+    <!-- Section 3 -->
+    <h2 id="cbb-3">Step three: Find your data</h2>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>CBB provides two options for discovering data — a map and a report. You can use either to find data about your industry and location.</p>
+        <p class="tip">Learn more about the data related to <a href="my-customers.html" target="_blank">your customers</a>, <a href="my-competitors.html" target="_blank">your competition</a>, or <a href="find-a-location.html" target="_blank">finding a location.</a></p>
+      </div>
+    </div>
+
+    <!-- Option 1 map -->
+    <h3 id="cbb-3a">Option 1: Use the Map</h3>
+      <p>This method creates a visual representation of your data.</p>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Click on the “Go to Map” button to launch a map of your location</p>
+      </div>
+    </div>
+
+    <!-- Option 2 report -->
+    <h3 id="cbb-3b">Option 2: Create a Report</h3>
+      <p>This method allows you to view data in a printable report format. However, you cannot view data related to several zip codes at one time.</p>
+    <div class="tutorial-container">
+      <img class="usa-width-one-half" src="../img/gif/select_industry.gif" alt="select industry gif">
+      <div class="usa-width-one-half">
+        <p>Click the “Create Report” button to load your report</p>
+      </div>
+    </div>
+
+    
+
+    <h2>Ready to get started?</h2>
+    <p>Launch the Census Business Builder to find your data now</p>
+    <a class="usa-button usa-button-big usa-button-primary" href="https://cbb.census.gov/sbe/#" target="_blank">Find your data</a>
+
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+@@include('../inc/footer.html', {
+  "index": "false"
+})
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

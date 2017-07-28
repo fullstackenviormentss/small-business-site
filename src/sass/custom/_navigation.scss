@@ -74,8 +74,16 @@
 	}
 }
 
-.usa-logo {
+#logo {
 	display: inline-block;
+
+	img {
+
+		height: 2rem;
+		@include media($large-screen) {
+			height: 3.5rem;
+		}
+	}
 }
 
 
@@ -145,42 +153,6 @@ a {
 	
 }
 
-
-.usa-layout-docs-main_content {
-	position: relative;
-	float: right;
-	margin: auto;
-	padding-left: 4%;
-	border-left: 5px solid $color-gray-lightest;
-
-
-	h1, h2, h3 {
-		font-family: $font-sans;
-		font-weight: $font-bold;
-	}
-
-	h4 {
-		font-family: $font-sans;
-		font-weight: $font-normal;
-		font-style: italic;
-	}
-
-	.img-container {
-		width: 100%;
-		//text-align: center;
-
-		height: 35rem;
-
-		img {
-			height: 100%;
-		}
-	}
-
-}
-
-.usa-font-lead {
-	font-family: $font-sans;
-}
 
 .current {
 	border-left: 4px solid $color-primary;

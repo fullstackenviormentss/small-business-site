@@ -68,38 +68,3 @@ input {
 	}
 }
 
-
-.cbb-input {
-	background-color: $color-gray-lightest;
-	height: 40rem;
-	padding: 4%;	
-	text-align: center;
-	margin-top: 3%;
-
-	h2 {
-		text-align: center;
-		color: $color-gray-dark;
-		font-family: $font-sans;
-		margin-top: 5%;
-		font-weight: $font-normal;
-	}
-}
-
-.input-container {
-	padding: 5% 0;
-
-	h4 {
-		font-family: $font-sans;
-		font-weight: $font-normal;
-		//text-transform: uppercase;
-	}
-
-	a {
-		text-decoration: none;
-
-		p {
-			margin: 0;
-		}
-	}
-	
-}

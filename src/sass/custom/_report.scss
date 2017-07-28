@@ -1,0 +1,62 @@
+#report-section {
+	min-height: 60vh;
+
+	h2 {
+		font-family: $font-sans;
+		font-weight: $font-bold;
+	}
+
+	p {
+		font-size: $h3-font-size;
+		font-weight: 300;
+		margin-bottom: 5%;
+	}
+
+	input {
+		width: 75%;
+	}
+}
+
+.input-container {
+	padding-left: 5%;
+
+	@include media($medium-screen) {
+		
+	}
+
+	h4 {
+		font-family: $font-sans;
+		font-weight: $font-bold;
+		text-transform: uppercase;
+		margin-top: 0;
+
+	}
+
+	a {
+		text-decoration: none;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	button {
+		display: block;
+		height: 5rem;
+		width: 30%;
+		text-transform: uppercase;
+		border-radius: 0;
+		font-size: $h3-font-size;
+
+		&:focus {
+			box-shadow: 0;
+		}
+	}
+	
+}
+
+#report {
+	width: 50%;
+	float: right;
+	margin: 5% 25% 0 0;
+}
