@@ -5174,51 +5174,48 @@ a:focus {
 
 /* line 114, src/sass/custom/_navigation.scss */
 .usa-layout-docs {
-  display: flex;
   height: 100%;
 }
 
-/* line 119, src/sass/custom/_navigation.scss */
+/* line 118, src/sass/custom/_navigation.scss */
 .usa-layout-docs-sidenav {
   display: none;
-  align-items: stretch;
 }
 
 @media screen and (min-width: 1201px) {
-  /* line 119, src/sass/custom/_navigation.scss */
+  /* line 118, src/sass/custom/_navigation.scss */
   .usa-layout-docs-sidenav {
     display: block;
     position: absolute;
     margin-top: 6rem;
-    align-items: stretch;
   }
 }
 
-/* line 134, src/sass/custom/_navigation.scss */
+/* line 131, src/sass/custom/_navigation.scss */
 .usa-sidenav-list.first-child {
   font-weight: 700;
 }
 
-/* line 138, src/sass/custom/_navigation.scss */
+/* line 135, src/sass/custom/_navigation.scss */
 .usa-sidenav-list.fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 143, src/sass/custom/_navigation.scss */
+/* line 140, src/sass/custom/_navigation.scss */
 .usa-sidenav-list.bottom {
   position: relative;
   top: auto;
   bottom: 0;
 }
 
-/* line 149, src/sass/custom/_navigation.scss */
+/* line 146, src/sass/custom/_navigation.scss */
 .usa-sidenav-list li {
   position: relative;
   border: none;
 }
 
-/* line 157, src/sass/custom/_navigation.scss */
+/* line 154, src/sass/custom/_navigation.scss */
 .current {
   border-left: 4px solid #0071bc;
   color: #0071bc;
@@ -5226,13 +5223,13 @@ a:focus {
   padding-left: 1.4rem;
 }
 
-/* line 165, src/sass/custom/_navigation.scss */
+/* line 162, src/sass/custom/_navigation.scss */
 .usa-banner {
   padding-bottom: 0;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 165, src/sass/custom/_navigation.scss */
+  /* line 162, src/sass/custom/_navigation.scss */
   .usa-banner {
     padding-bottom: 0.7rem;
   }

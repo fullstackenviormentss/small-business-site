@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+@@include('../inc/head.html', {
+  "index": "false",
+  "description": " 'Metadata description' ",
+  "title": "My competitors"
+})
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+@@include('../inc/navigation-2.html', {
+  "index": "false"
+})
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#my-competitors-0">My Competitors</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#my-competitors-1'>Learn about your competitors</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#my-competitors-1a' >Discover business patterns</a>
+          </li>
+          <li>
+            <a href= '#my-competitors-1b' >Become a competitive employer</a>
+          </li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+      
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="my-competitors-0">My Competitors</h1>
+    <p class="usa-font-lead">Our data can give you a leg up by helping you understand the competition. </p>
+    
+    <div class="img-container">
+      <img src="../img/illustration.jpeg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="my-competitors-1" >Use data to learn about your competitors</h2>
+    <p>The Census Business Builder can easily help you find information about your industry.</p>
+    <h3 id="my-competitors-1a">Discover business patterns in your area</h3>
+    <p>Need to know more about the types of businesses in your area? Economic and business data offer insights into how much competition you’ll have and what their revenue streams are like. are like. Available information includes: </p>
+    <ul>
+      <li>Number of establishments</li>
+      <li>Population per employer</li>
+      <li>Average revenue</li>
+    </ul>
+
+    <h3 id="my-competitors-1b">Become a competitive employer</h3>
+    <p>Want to become a more competitive employer? Our data can help you determine how many employees you’ll need, and how much you should pay them. Our information includes:</p>
+    <ul>
+      <li>Number of employees per establishmen</li>
+      <li>Average payroll for each employee</li>
+      <li>Average revenue per dollar of payroll</li>
+    </ul>
+
+    
+    <h2>Learn more about your competition with Census Business Builder</h2>
+    <a class="usa-button usa-button-big usa-button-primary" href="https://cbb.census.gov/sbe/#" target="_blank">Start now</a>
+
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+@@include('../inc/footer.html', {
+  "index": "false"
+})
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

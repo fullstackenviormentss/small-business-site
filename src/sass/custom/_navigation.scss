@@ -112,19 +112,16 @@ a {
 }
 
 .usa-layout-docs {
-	display: flex;
 	height: 100%;
 }
 
 .usa-layout-docs-sidenav {
 	display: none;
-	align-items: stretch;
 
 	@include media($large-screen) {
 		display: block;
 		position: absolute;
 	 	margin-top: 6rem;
-	 	align-items: stretch;
 	}
 }
 
