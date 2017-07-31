@@ -1,4 +1,9 @@
 #report-section {
+	padding: 3% 3% 10% 3%;
+
+	@include media($medium-screen) {
+		padding: 5%;
+	}
 	min-height: 60vh;
 
 	h2 {
@@ -13,15 +18,22 @@
 	}
 
 	input {
-		width: 75%;
+
+		width: 100%;
+		@include media($medium-screen) {
+			width: 75%;
+		}
+	}
+	img {
+		margin-bottom: 10%;
 	}
 }
 
 .input-container {
-	padding-left: 5%;
+	padding-left: 0;
 
 	@include media($medium-screen) {
-		
+		padding-left: 5%;
 	}
 
 	h4 {
@@ -56,7 +68,13 @@
 }
 
 #report {
-	width: 50%;
-	float: right;
-	margin: 5% 25% 0 0;
+	width: 100%;
+	text-align: center;
+
+	@include media($large-screen) {
+		width: 50%;
+		float: right;
+		margin: 5% 25% 0 0;
+	}
+	
 }

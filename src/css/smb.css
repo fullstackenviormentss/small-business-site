@@ -5884,33 +5884,60 @@ input:-moz-placeholder {
 
 /* line 1, src/sass/custom/_report.scss */
 #report-section {
+  padding: 3% 3% 10% 3%;
   min-height: 60vh;
 }
 
-/* line 4, src/sass/custom/_report.scss */
+@media screen and (min-width: 600px) {
+  /* line 1, src/sass/custom/_report.scss */
+  #report-section {
+    padding: 5%;
+  }
+}
+
+/* line 9, src/sass/custom/_report.scss */
 #report-section h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
 }
 
-/* line 9, src/sass/custom/_report.scss */
+/* line 14, src/sass/custom/_report.scss */
 #report-section p {
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 5%;
 }
 
-/* line 15, src/sass/custom/_report.scss */
+/* line 20, src/sass/custom/_report.scss */
 #report-section input {
-  width: 75%;
+  width: 100%;
 }
 
-/* line 20, src/sass/custom/_report.scss */
-.input-container {
-  padding-left: 5%;
+@media screen and (min-width: 600px) {
+  /* line 20, src/sass/custom/_report.scss */
+  #report-section input {
+    width: 75%;
+  }
 }
 
 /* line 27, src/sass/custom/_report.scss */
+#report-section img {
+  margin-bottom: 10%;
+}
+
+/* line 32, src/sass/custom/_report.scss */
+.input-container {
+  padding-left: 0;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 32, src/sass/custom/_report.scss */
+  .input-container {
+    padding-left: 5%;
+  }
+}
+
+/* line 39, src/sass/custom/_report.scss */
 .input-container h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
@@ -5918,17 +5945,17 @@ input:-moz-placeholder {
   margin-top: 0;
 }
 
-/* line 35, src/sass/custom/_report.scss */
+/* line 47, src/sass/custom/_report.scss */
 .input-container a {
   text-decoration: none;
 }
 
-/* line 38, src/sass/custom/_report.scss */
+/* line 50, src/sass/custom/_report.scss */
 .input-container a p {
   margin: 0;
 }
 
-/* line 43, src/sass/custom/_report.scss */
+/* line 55, src/sass/custom/_report.scss */
 .input-container button {
   display: block;
   height: 5rem;
@@ -5938,16 +5965,24 @@ input:-moz-placeholder {
   font-size: 2rem;
 }
 
-/* line 51, src/sass/custom/_report.scss */
+/* line 63, src/sass/custom/_report.scss */
 .input-container button:focus {
   box-shadow: 0;
 }
 
-/* line 58, src/sass/custom/_report.scss */
+/* line 70, src/sass/custom/_report.scss */
 #report {
-  width: 50%;
-  float: right;
-  margin: 5% 25% 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1201px) {
+  /* line 70, src/sass/custom/_report.scss */
+  #report {
+    width: 50%;
+    float: right;
+    margin: 5% 25% 0 0;
+  }
 }
 
 /* line 1, src/sass/custom/_footer.scss */

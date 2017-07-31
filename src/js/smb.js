@@ -1,5 +1,25 @@
 // scrollspy section
 $(function($){
+  // mobile navigation
+
+  $('.usa-menu-btn').on('click', function() {
+    $('#nav-mobile').addClass('is-visible');
+    $('.usa-overlay').addClass('is-visible');
+  });
+
+  $('.usa-overlay').click(function(event) { 
+    if(!$(event.target).closest('#nav-mobile').length) {
+        if($('#nav-mobile').is(":visible")) {
+            $('#nav-mobile').removeClass('is-visible');
+            $('.usa-overlay').removeClass('is-visible');
+        }
+    }        
+  });
+
+  $('.usa-accordion-button').on('click', function() {
+    $(this).attr('aria-expanded', 'true');
+  })
+
   // navigation drop down
 
   $('.all-links').hover(function(e){

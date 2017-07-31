@@ -2,200 +2,18 @@
 <html lang="en">
   
 <!-- Head -->
-<head>
-  <meta charset="utf-8">
-
-  <!--
-
-      Built by Coding it Forward Fellows 
-      (https://www.codingitforward.com/)
-
-    -->
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>My NAICS Code</title>
-  <meta name="description" content=  'Metadata description' >
-
-
-   
-
-  
-  	<link type="text/css" rel="stylesheet" href="../css/smb.css">
-  	<script src="../js/jquery.min.js"></script>
-    <script src="../js/uswds.min.js"></script>
-    <script src="../js/smb.js"></script> 
-	
-
-</head>
+@@include('../inc/head.html', {
+  "index": "false",
+  "description": " 'Metadata description' ",
+  "title": "Restaurant Use Case"
+})
 <!-- End of Head -->
 
 <body class="layout-demo">
 <!-- Nav -->
-<div class="usa-navbar">
-  <button class="usa-menu-btn">Menu</button>
-  <div class="usa-logo" id="logo">
-    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
-  </div>
-</div>
-
-<!-- nav desktop -->
-<nav id="nav-desktop" role="navigation" class="usa-nav">
-  <div class="usa-nav-inner usa-grid-wide">
-    <ul class="usa-nav-primary usa-accordion">
-      <li class="all-links">
-        <a class="usa-nav-link" href="new_business.html">
-          <span>Start a business</span>
-        </a>
-        <ul class="sub-nav-container">
-          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
-          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
-          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
-        </ul>
-      </li>
-      
-      <li class="all-links">
-        <a class="usa-nav-link" href="grow_business.html">
-          <span>Grow a business</span>
-        </a>
-        <ul class="sub-nav-container">
-          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
-          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
-          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
-          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
-        </ul>
-      </li>
-      
-      <li class="all-links">
-        <a class="usa-nav-link" href="article-home.html">
-          <span>Explore resources</span>
-        </a>
-        <ul class="sub-nav-container">
-          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
-          <a href="stories-home.html"><li class="sub-nav-link">Success Stories</li></a>
-          <a href="videos-home.html"><li class="sub-nav-link">Video Tutorials</li></a>
-        </ul>
-      </li>
-
-      <li class="all-links">
-        <a class="usa-nav-link" href="advice.html">
-          <span>Get advice</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="usa-nav-secondary">
-        <form class="usa-search usa-search-small js-search-form">
-          <div role="search">
-            <label class="usa-sr-only" for="search-field-small">Search small</label>
-            <input id="search-field-small" type="search" name="search">
-            <button type="submit">
-              <span class="usa-sr-only">Search</span>
-            </button>
-          </div>
-        </form>
-        <ul class="usa-unstyled-list usa-nav-secondary-links">
-          <li class="js-search-button-container">
-            <button class="usa-header-search-button js-search-button">Search</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
-
-<!-- nav mobile -->
-<nav id="nav-mobile" role="navigation" class="usa-nav">
-  <div class="usa-nav-inner">
-    <ul class="usa-nav-primary usa-accordion">
-      <li>
-        
-        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
-          <span>Start a Business</span>
-        </button>
-          <ul id="side-nav-1" class="usa-nav-submenu">
-            <li>
-              <a href="new_business.html">Overview</a>
-            </li>
-            <li>
-              <a href="business-plan.html">Business Plan</a>
-            </li>
-            <li>
-              <a href="find-a-location.html">Find a Location</a>
-            </li>
-            <li>
-              <a href="naics.html">My NAICS Code</a>
-            </li>
-          </ul>
-      </li>
-  
-
-      <li>
-          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
-            <span>Grow a Business</span>
-          </button>
-          <ul id="sidenav-2" class="usa-nav-submenu">
-            <li>
-              <a href="grow_business.html">Overview</a>
-            </li>
-            <li>
-              <a href="my-customers.html">My Customers</a>
-            </li>
-            <li>
-              <a href="my-competitors.html">My Competitors</a>
-            </li>
-            <li>
-              <a href="build-a-report.html">Build a Report</a>
-            </li>
-            <li>
-              <a href="survey-help.html">Survey Help</a>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
-            <span>Explore Resources</span>
-          </button>
-          <ul id="sidenav-3" class="usa-nav-submenu">
-            <li>
-              <a href="article-home.html">Home</a>
-            </li>
-            <li>
-              <a href="bb.html">Census Business Builder</a>
-            </li>
-            <li>
-              <a href="stories-home.html">Success Stories</a>
-            </li>
-            <li>
-              <a href="videos-home.html">Video Tutorials</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="all-links">
-        <a class="usa-nav-link" href="advice.html">
-          <span>Get advice</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="usa-nav-secondary">
-        <form class="usa-search usa-search-small js-search-form">
-          <div role="search">
-            <label class="usa-sr-only" for="search-field-small">Search small</label>
-          </div>
-        </form>
-        <ul class="usa-unstyled-list usa-nav-secondary-links">
-          <li class="js-search-button-container">
-            <button class="usa-header-search-button js-search-button">Search</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
+@@include('../inc/navigation-2.html', {
+  "index": "false"
+})
 <!--End of Nav-->
 
 <div class="usa-overlay"></div>
@@ -206,12 +24,12 @@
   <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
     <ul class="usa-sidenav-list">
       <li>
-        <a class="usa-current" href="#naics-0">My NAICS Code</a>
+        <a class="usa-current" href="#restaurant-0">How to start a restaurant</a>
       </li>
 
       <li>
         <!-- Main header -->
-        <a href= '#naics-1'>Benefits of NAICS</a>
+        <a href= '#restaurant-1'>Benefits of NAICS</a>
         <!-- Main header end -->
         <ul class="usa-sidenav-sub_list">
           <!-- sublinks -->
@@ -351,21 +169,9 @@
 
 
 <!-- Footer -->
-<footer class="usa-footer usa-footer-medium" role="contentinfo">
-
-  <div class="usa-footer-secondary_section">
-    <div class="usa-grid">
-      <div class="usa-footer-logo usa-width-one-half">
-
-         
-
-        
-          <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image"> 
-        
-      </div>
-    </div>
-  </div>
-</footer>
+@@include('../inc/footer.html', {
+  "index": "false"
+})
 <!-- End of Footer -->
 
 <!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
