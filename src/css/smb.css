@@ -5486,6 +5486,11 @@ a:focus {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
+/* line 146, src/sass/custom/_section.scss */
+.tip {
+  font-weight: 300;
+}
+
 /* line 1, src/sass/custom/_inputs.scss */
 legend {
   font-size: 2rem;
