@@ -5061,6 +5061,11 @@ h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
+/* line 9, src/sass/custom/_variables.scss */
+button, .usa-button-primary, .usa-button-secondary {
+  border-radius: 0;
+}
+
 /* line 2, src/sass/custom/_navigation.scss */
 #nav-desktop {
   display: none;
@@ -5377,35 +5382,42 @@ a:focus {
   width: 100%;
   display: block;
   border-bottom: 3px solid #323a45;
-  margin-bottom: 3%;
 }
 
-/* line 51, src/sass/custom/_section.scss */
+/* line 50, src/sass/custom/_section.scss */
 .three-section-container .title-container h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 58, src/sass/custom/_section.scss */
+/* line 57, src/sass/custom/_section.scss */
 .three-section-container .content-container {
-  background-color: #f1f1f1;
+  margin-bottom: 5%;
   padding: 2%;
   height: 100%;
 }
 
-/* line 63, src/sass/custom/_section.scss */
+@media screen and (min-width: 600px) {
+  /* line 57, src/sass/custom/_section.scss */
+  .three-section-container .content-container {
+    margin-bottom: 0;
+  }
+}
+
+/* line 65, src/sass/custom/_section.scss */
 .three-section-container .content-container img {
+  margin-bottom: 5%;
   width: 100%;
 }
 
-/* line 67, src/sass/custom/_section.scss */
+/* line 70, src/sass/custom/_section.scss */
 .three-section-container .content-container h3 {
   margin: 0;
   font-weight: 700;
 }
 
-/* line 77, src/sass/custom/_section.scss */
+/* line 80, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content {
   position: relative;
   float: right;
@@ -5413,80 +5425,94 @@ a:focus {
 }
 
 @media screen and (min-width: 1201px) {
-  /* line 77, src/sass/custom/_section.scss */
+  /* line 80, src/sass/custom/_section.scss */
   .usa-layout-docs-main_content {
     border-left: 5px solid #f1f1f1;
     padding-left: 4%;
   }
 }
 
-/* line 87, src/sass/custom/_section.scss */
+/* line 90, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content h1, .usa-layout-docs-main_content h2, .usa-layout-docs-main_content h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
 }
 
-/* line 92, src/sass/custom/_section.scss */
+/* line 96, src/sass/custom/_section.scss */
+.usa-layout-docs-main_content h1:first-of-type {
+  margin-top: 0;
+}
+
+/* line 101, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content h4 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 98, src/sass/custom/_section.scss */
+/* line 107, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content p {
   margin: 0;
 }
 
-/* line 102, src/sass/custom/_section.scss */
+/* line 112, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content .img-container {
   width: 100%;
-  height: 35rem;
+  margin: 5% 0;
+  height: 20rem;
 }
 
-/* line 108, src/sass/custom/_section.scss */
+@media screen and (min-width: 600px) {
+  /* line 112, src/sass/custom/_section.scss */
+  .usa-layout-docs-main_content .img-container {
+    height: 35rem;
+  }
+}
+
+/* line 122, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content .img-container img {
   height: 100%;
+  width: auto;
 }
 
-/* line 113, src/sass/custom/_section.scss */
+/* line 128, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content .tutorial-container {
   width: 100%;
   min-height: 25rem;
   margin-bottom: 5%;
 }
 
-/* line 119, src/sass/custom/_section.scss */
+/* line 134, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content .tutorial-container img {
   padding-top: 3%;
 }
 
-/* line 124, src/sass/custom/_section.scss */
+/* line 139, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content .tutorial-container p {
   padding: 10% 0 0 0;
   max-width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 124, src/sass/custom/_section.scss */
+  /* line 139, src/sass/custom/_section.scss */
   .usa-layout-docs-main_content .tutorial-container p {
     padding: 10% 0 0 5%;
   }
 }
 
-/* line 133, src/sass/custom/_section.scss */
+/* line 148, src/sass/custom/_section.scss */
 .usa-layout-docs-main_content .tutorial-container .tip {
   padding-top: 0;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
-/* line 142, src/sass/custom/_section.scss */
+/* line 157, src/sass/custom/_section.scss */
 .usa-font-lead {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-/* line 146, src/sass/custom/_section.scss */
+/* line 161, src/sass/custom/_section.scss */
 .tip {
   font-weight: 300;
 }
@@ -5728,39 +5754,48 @@ input:-moz-placeholder {
   border-radius: 0;
 }
 
-/* line 11, src/sass/custom/_data.scss */
+/* line 9, src/sass/custom/_data.scss */
+#data-results-section h4 {
+  font-weight: 300;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 2rem;
+  width: 50rem;
+  margin-bottom: 2%;
+}
+
+/* line 18, src/sass/custom/_data.scss */
 #data-results-card {
   background-color: #f1f1f1;
   padding: 5%;
 }
 
-/* line 16, src/sass/custom/_data.scss */
+/* line 23, src/sass/custom/_data.scss */
 #data-section {
   padding: 10% 5% 2% 5%;
   min-height: 85vh;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 16, src/sass/custom/_data.scss */
+  /* line 23, src/sass/custom/_data.scss */
   #data-section {
     padding: 5% 5% 2% 5%;
   }
 }
 
-/* line 24, src/sass/custom/_data.scss */
+/* line 31, src/sass/custom/_data.scss */
 #data-section h3 {
   font-weight: 700;
   margin-bottom: 5%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 24, src/sass/custom/_data.scss */
+  /* line 31, src/sass/custom/_data.scss */
   #data-section h3 {
     margin-bottom: 2%;
   }
 }
 
-/* line 33, src/sass/custom/_data.scss */
+/* line 40, src/sass/custom/_data.scss */
 #data-section h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -5768,12 +5803,12 @@ input:-moz-placeholder {
   font-size: 2.5rem;
 }
 
-/* line 39, src/sass/custom/_data.scss */
+/* line 46, src/sass/custom/_data.scss */
 #data-section button {
   vertical-align: top;
 }
 
-/* line 44, src/sass/custom/_data.scss */
+/* line 51, src/sass/custom/_data.scss */
 #search {
   height: 75%;
   margin-top: 5%;
@@ -5781,7 +5816,7 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 44, src/sass/custom/_data.scss */
+  /* line 51, src/sass/custom/_data.scss */
   #search {
     height: 100%;
     margin-top: 0;
@@ -5789,17 +5824,17 @@ input:-moz-placeholder {
   }
 }
 
-/* line 57, src/sass/custom/_data.scss */
+/* line 64, src/sass/custom/_data.scss */
 .inline-container {
   height: 4.5em;
 }
 
-/* line 61, src/sass/custom/_data.scss */
+/* line 68, src/sass/custom/_data.scss */
 #zipcode-container {
   margin: 5% 0;
 }
 
-/* line 65, src/sass/custom/_data.scss */
+/* line 72, src/sass/custom/_data.scss */
 .title {
   display: block;
   border-left: 5px solid #205493;
@@ -5808,13 +5843,13 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 65, src/sass/custom/_data.scss */
+  /* line 72, src/sass/custom/_data.scss */
   .title {
     margin-bottom: 5%;
   }
 }
 
-/* line 75, src/sass/custom/_data.scss */
+/* line 82, src/sass/custom/_data.scss */
 .title p {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
@@ -5822,7 +5857,7 @@ input:-moz-placeholder {
   margin: 0;
 }
 
-/* line 82, src/sass/custom/_data.scss */
+/* line 89, src/sass/custom/_data.scss */
 .title h2, .title #city {
   margin-top: 1%;
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
@@ -5830,7 +5865,7 @@ input:-moz-placeholder {
   font-size: 2rem;
 }
 
-/* line 91, src/sass/custom/_data.scss */
+/* line 98, src/sass/custom/_data.scss */
 .data-card {
   padding: 15% 5% 5% 5%;
   margin-bottom: 5%;
@@ -5840,19 +5875,19 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 91, src/sass/custom/_data.scss */
+  /* line 98, src/sass/custom/_data.scss */
   .data-card {
     padding: 40% 8% 8% 8%;
     height: 40rem;
   }
 }
 
-/* line 105, src/sass/custom/_data.scss */
+/* line 112, src/sass/custom/_data.scss */
 .card-container {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 }
 
-/* line 109, src/sass/custom/_data.scss */
+/* line 116, src/sass/custom/_data.scss */
 .card-number {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 3em;
@@ -5861,7 +5896,7 @@ input:-moz-placeholder {
   text-align: center;
 }
 
-/* line 117, src/sass/custom/_data.scss */
+/* line 124, src/sass/custom/_data.scss */
 .card-title {
   text-align: center;
   text-transform: uppercase;
@@ -5872,13 +5907,13 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 117, src/sass/custom/_data.scss */
+  /* line 124, src/sass/custom/_data.scss */
   .card-title {
     margin-bottom: 15%;
   }
 }
 
-/* line 130, src/sass/custom/_data.scss */
+/* line 137, src/sass/custom/_data.scss */
 .card-description {
   text-align: center;
   color: #323a45;

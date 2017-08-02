@@ -6,6 +6,13 @@
 	button {
 		border-radius: 0;
 	}
+	h4 {
+		font-weight: 300;
+		font-family: $font-sans;
+		font-size: $h3-font-size;
+		width: 50rem;
+		margin-bottom: 2%;
+	}
 }
 
 #data-results-card {
@@ -103,7 +110,7 @@
 }
 
 .card-container {
-	margin-bottom: 10%;
+	margin-bottom: 7%;
 }
 
 .card-number {

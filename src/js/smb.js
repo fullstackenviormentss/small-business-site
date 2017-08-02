@@ -129,6 +129,7 @@ $(function($){
         $('#income').html(income_output);
     });
 
+
     $.getJSON("https://api.censusreporter.org/1.0/data/show/latest?table_ids=" + age + "&geo_ids=86000US" + zipcode, function(getAge){
         var s = JSON.stringify(getAge);
         var age_num = String.getNumber(s, 'estimate');

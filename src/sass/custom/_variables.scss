@@ -6,3 +6,6 @@ h3 {
 $featured-height:	50rem;
 $site-wide-width: 1200px;
 
+button, .usa-button-primary, .usa-button-secondary {
+	border-radius: 0;
+}

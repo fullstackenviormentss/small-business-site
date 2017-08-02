@@ -46,7 +46,6 @@
 		width: 100%;
 		display: block;
 		border-bottom: 3px solid $color-gray-dark;
-		margin-bottom: 3%;
 
 		h3 {
 			font-family: $font-sans;
@@ -56,11 +55,15 @@
 	}
 
 	.content-container {
-		background-color: $color-gray-lightest;
+		margin-bottom: 5%;
 		padding: 2%;
 		height: 100%;
 
+		@include media($medium-screen) {
+			margin-bottom: 0;
+		}
 		img {
+			margin-bottom: 5%;
 			width: 100%;
 		}
 
@@ -89,6 +92,12 @@
 		font-weight: $font-bold;
 	}
 
+	h1 {
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+
 	h4 {
 		font-family: $font-sans;
 		font-weight: $font-normal;
@@ -97,16 +106,22 @@
 
 	p {
 		margin: 0;
+
 	}
 
 	.img-container {
 		width: 100%;
-		//text-align: center;
+		margin: 5% 0;
+		height: 20rem;
 
-		height: 35rem;
+		@include media($medium-screen) {
+			height: 35rem;
+		}
+		
 
 		img {
 			height: 100%;
+			width: auto;
 		}
 	}
 
