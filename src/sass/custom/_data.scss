@@ -7,11 +7,15 @@
 		border-radius: 0;
 	}
 	h4 {
+		width: 30rem;
 		font-weight: 300;
 		font-family: $font-sans;
 		font-size: $h3-font-size;
-		width: 50rem;
 		margin-bottom: 2%;
+
+		@include media($medium-screen) {
+			width: 50rem;
+		}
 	}
 }
 

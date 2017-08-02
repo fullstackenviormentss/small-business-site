@@ -5780,46 +5780,53 @@ input:-moz-placeholder {
 
 /* line 9, src/sass/custom/_data.scss */
 #data-results-section h4 {
+  width: 30rem;
   font-weight: 300;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2rem;
-  width: 50rem;
   margin-bottom: 2%;
 }
 
-/* line 18, src/sass/custom/_data.scss */
+@media screen and (min-width: 600px) {
+  /* line 9, src/sass/custom/_data.scss */
+  #data-results-section h4 {
+    width: 50rem;
+  }
+}
+
+/* line 22, src/sass/custom/_data.scss */
 #data-results-card {
   background-color: #f1f1f1;
   padding: 5%;
 }
 
-/* line 23, src/sass/custom/_data.scss */
+/* line 27, src/sass/custom/_data.scss */
 #data-section {
   padding: 10% 5% 2% 5%;
   min-height: 85vh;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 23, src/sass/custom/_data.scss */
+  /* line 27, src/sass/custom/_data.scss */
   #data-section {
     padding: 5% 5% 2% 5%;
   }
 }
 
-/* line 31, src/sass/custom/_data.scss */
+/* line 35, src/sass/custom/_data.scss */
 #data-section h3 {
   font-weight: 700;
   margin-bottom: 5%;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 31, src/sass/custom/_data.scss */
+  /* line 35, src/sass/custom/_data.scss */
   #data-section h3 {
     margin-bottom: 2%;
   }
 }
 
-/* line 40, src/sass/custom/_data.scss */
+/* line 44, src/sass/custom/_data.scss */
 #data-section h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400;
@@ -5827,12 +5834,12 @@ input:-moz-placeholder {
   font-size: 2.5rem;
 }
 
-/* line 46, src/sass/custom/_data.scss */
+/* line 50, src/sass/custom/_data.scss */
 #data-section button {
   vertical-align: top;
 }
 
-/* line 51, src/sass/custom/_data.scss */
+/* line 55, src/sass/custom/_data.scss */
 #search {
   height: 75%;
   margin-top: 5%;
@@ -5840,7 +5847,7 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 51, src/sass/custom/_data.scss */
+  /* line 55, src/sass/custom/_data.scss */
   #search {
     height: 100%;
     margin-top: 0;
@@ -5848,17 +5855,17 @@ input:-moz-placeholder {
   }
 }
 
-/* line 64, src/sass/custom/_data.scss */
+/* line 68, src/sass/custom/_data.scss */
 .inline-container {
   height: 4.5em;
 }
 
-/* line 68, src/sass/custom/_data.scss */
+/* line 72, src/sass/custom/_data.scss */
 #zipcode-container {
   margin: 5% 0;
 }
 
-/* line 72, src/sass/custom/_data.scss */
+/* line 76, src/sass/custom/_data.scss */
 .title {
   display: block;
   border-left: 5px solid #205493;
@@ -5867,13 +5874,13 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 72, src/sass/custom/_data.scss */
+  /* line 76, src/sass/custom/_data.scss */
   .title {
     margin-bottom: 5%;
   }
 }
 
-/* line 82, src/sass/custom/_data.scss */
+/* line 86, src/sass/custom/_data.scss */
 .title p {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
@@ -5881,7 +5888,7 @@ input:-moz-placeholder {
   margin: 0;
 }
 
-/* line 89, src/sass/custom/_data.scss */
+/* line 93, src/sass/custom/_data.scss */
 .title h2, .title #city {
   margin-top: 1%;
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
@@ -5889,7 +5896,7 @@ input:-moz-placeholder {
   font-size: 2rem;
 }
 
-/* line 98, src/sass/custom/_data.scss */
+/* line 102, src/sass/custom/_data.scss */
 .data-card {
   padding: 15% 5% 5% 5%;
   margin-bottom: 5%;
@@ -5899,19 +5906,19 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 98, src/sass/custom/_data.scss */
+  /* line 102, src/sass/custom/_data.scss */
   .data-card {
     padding: 40% 8% 8% 8%;
     height: 40rem;
   }
 }
 
-/* line 112, src/sass/custom/_data.scss */
+/* line 116, src/sass/custom/_data.scss */
 .card-container {
   margin-bottom: 7%;
 }
 
-/* line 116, src/sass/custom/_data.scss */
+/* line 120, src/sass/custom/_data.scss */
 .card-number {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 3em;
@@ -5920,7 +5927,7 @@ input:-moz-placeholder {
   text-align: center;
 }
 
-/* line 124, src/sass/custom/_data.scss */
+/* line 128, src/sass/custom/_data.scss */
 .card-title {
   text-align: center;
   text-transform: uppercase;
@@ -5931,13 +5938,13 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 124, src/sass/custom/_data.scss */
+  /* line 128, src/sass/custom/_data.scss */
   .card-title {
     margin-bottom: 15%;
   }
 }
 
-/* line 137, src/sass/custom/_data.scss */
+/* line 141, src/sass/custom/_data.scss */
 .card-description {
   text-align: center;
   color: #323a45;
