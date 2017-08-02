@@ -2,14 +2,25 @@
 .featured-content {
 	height: $featured-height;
 	background-color: $color-gray-lighter;
-	padding: 7%;
+	padding: 3%;
 	
+	.featured-text {
+		padding: 5%;
+		background-color: $color-white;
+		/* opacity: 0.8; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.7+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b3ffffff',GradientType=0 ); /* IE6-9 */
+	}
 
 	h3 {
 		font-family: $font-serif;
 		font-weight: $font-bold;
 		font-size: $h1-font-size;
 		line-height: $heading-line-height;
+		margin-top: 1%;
 	}
 
 	p {
@@ -23,7 +34,7 @@
 
 	a {
 		@include media($medium-screen) {
-			float: right;
+			
 		}
 
 
@@ -113,4 +124,17 @@
 	&:focus {
 		box-shadow: none;
 	}
+}
+
+#new-feature {
+	background-image: url('#{$image-path}/stock/restaurant-sm.jpg');
+  	background-position: center;
+  	background-size: cover;
+}
+
+
+#grow-feature {
+	background-image: url('#{$image-path}/stock/report-sm.jpg');
+  	background-position: center;
+  	background-size: cover;
 }
