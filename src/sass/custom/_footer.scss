@@ -1,4 +1,22 @@
 .usa-footer-secondary_section {
 	background-color: $color-primary-darker;
+	text-align: center;
+	
+
+	p {
+		padding-top: 2%;
+		color: $color-white;
+		a {
+			color: $color-white;
+			text-decoration: none;
+			margin: 0 1%;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		
+	}
 }
+
 

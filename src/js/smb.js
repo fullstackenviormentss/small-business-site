@@ -28,7 +28,7 @@ $(function($){
 
     }, function(e) {
       $(this).css("background-color", "white");
-      $(this).children('.sub-nav-container').eq(0).slideUp(200);
+      $(this).children('.sub-nav-container').eq(0).slideUp(50);
   });
 
   // smooth scroll links on page

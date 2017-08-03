@@ -6059,4 +6059,23 @@ input:-moz-placeholder {
 /* line 1, src/sass/custom/_footer.scss */
 .usa-footer-secondary_section {
   background-color: #205493;
+  text-align: center;
+}
+
+/* line 6, src/sass/custom/_footer.scss */
+.usa-footer-secondary_section p {
+  padding-top: 2%;
+  color: #ffffff;
+}
+
+/* line 9, src/sass/custom/_footer.scss */
+.usa-footer-secondary_section p a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1%;
+}
+
+/* line 14, src/sass/custom/_footer.scss */
+.usa-footer-secondary_section p a:hover {
+  text-decoration: underline;
 }
