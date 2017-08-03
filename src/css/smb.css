@@ -6060,22 +6060,23 @@ input:-moz-placeholder {
 .usa-footer-secondary_section {
   background-color: #205493;
   text-align: center;
+  padding: 2% 0;
 }
 
-/* line 6, src/sass/custom/_footer.scss */
+/* line 7, src/sass/custom/_footer.scss */
 .usa-footer-secondary_section p {
   padding-top: 2%;
   color: #ffffff;
 }
 
-/* line 9, src/sass/custom/_footer.scss */
+/* line 10, src/sass/custom/_footer.scss */
 .usa-footer-secondary_section p a {
   color: #ffffff;
   text-decoration: none;
   margin: 0 1%;
 }
 
-/* line 14, src/sass/custom/_footer.scss */
+/* line 15, src/sass/custom/_footer.scss */
 .usa-footer-secondary_section p a:hover {
   text-decoration: underline;
 }
