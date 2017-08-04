@@ -26,10 +26,11 @@
 
 #data-section {
 	padding: 10% 5% 2% 5%;
-	min-height: 85vh;
+	min-height: 60vh;
 
 	@include media($medium-screen) {
 		padding: 5% 5% 2% 5%;
+		min-height: 45vh;
 	}
 
 	h3 {
