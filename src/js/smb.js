@@ -142,11 +142,8 @@ $(function($){
         $('#employment').html(commaSeparateNumber(employment_num));
     });
 
-    $.getJSON("https://api.censusreporter.org/1.0/geo/tiger2015/86000US" + zipcode + "/parents", function(getCity){
-      var city = getCity.parents[2].display_name;
-      $('#city').html(city);
-    });
 
+    $('#city').html(zipcode);
     $('#data-section').css("min-height", "60vh");
     $('#data-results-section').slideDown(300);
     //$(window).scrollTop($('#data-results-section').offset().top);

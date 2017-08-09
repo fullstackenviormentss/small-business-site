@@ -5293,17 +5293,18 @@ a:focus {
 .usa-hero-callout h2 {
   color: #112e51;
   font-size: 2.9em;
+  line-height: 1.1em;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-/* line 36, src/sass/custom/_hero.scss */
+/* line 37, src/sass/custom/_hero.scss */
 .usa-hero-callout p {
   margin-top: 2rem;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2rem;
 }
 
-/* line 42, src/sass/custom/_hero.scss */
+/* line 43, src/sass/custom/_hero.scss */
 .usa-hero-callout .usa-button {
   margin-top: 1rem;
   width: auto;
@@ -5313,12 +5314,12 @@ a:focus {
   padding: 0.8em;
 }
 
-/* line 50, src/sass/custom/_hero.scss */
+/* line 51, src/sass/custom/_hero.scss */
 .usa-hero-callout .usa-button:focus {
   box-shadow: none;
 }
 
-/* line 56, src/sass/custom/_hero.scss */
+/* line 57, src/sass/custom/_hero.scss */
 .usa-hero-callout-alt {
   color: #323a45;
   font-size: 1.8em;
@@ -5831,16 +5832,21 @@ input:-moz-placeholder {
 #data-section h2 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400;
-  margin: 0;
+  line-height: 0.1em;
   font-size: 2.5rem;
 }
 
 /* line 51, src/sass/custom/_data.scss */
+#data-section h2:last-child {
+  margin-bottom: 1%;
+}
+
+/* line 55, src/sass/custom/_data.scss */
 #data-section button {
   vertical-align: top;
 }
 
-/* line 56, src/sass/custom/_data.scss */
+/* line 60, src/sass/custom/_data.scss */
 #search {
   height: 75%;
   margin-top: 5%;
@@ -5848,7 +5854,7 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 56, src/sass/custom/_data.scss */
+  /* line 60, src/sass/custom/_data.scss */
   #search {
     height: 100%;
     margin-top: 0;
@@ -5856,17 +5862,17 @@ input:-moz-placeholder {
   }
 }
 
-/* line 69, src/sass/custom/_data.scss */
+/* line 73, src/sass/custom/_data.scss */
 .inline-container {
   height: 4.5em;
 }
 
-/* line 73, src/sass/custom/_data.scss */
+/* line 77, src/sass/custom/_data.scss */
 #zipcode-container {
   margin: 5% 0;
 }
 
-/* line 77, src/sass/custom/_data.scss */
+/* line 81, src/sass/custom/_data.scss */
 .title {
   display: block;
   border-left: 5px solid #205493;
@@ -5875,51 +5881,54 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 77, src/sass/custom/_data.scss */
+  /* line 81, src/sass/custom/_data.scss */
   .title {
     margin-bottom: 5%;
   }
 }
 
-/* line 87, src/sass/custom/_data.scss */
+/* line 91, src/sass/custom/_data.scss */
 .title p {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+  color: #323a45;
 }
 
-/* line 94, src/sass/custom/_data.scss */
-.title h2, .title #city {
+/* line 99, src/sass/custom/_data.scss */
+.title h2 {
   margin-top: 1%;
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-weight: 400;
   font-size: 2rem;
 }
 
-/* line 103, src/sass/custom/_data.scss */
+/* line 106, src/sass/custom/_data.scss */
+.title #city {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* line 114, src/sass/custom/_data.scss */
 .data-card {
   padding: 15% 5% 5% 5%;
-  margin-bottom: 5%;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   height: 30rem;
 }
 
 @media screen and (min-width: 600px) {
-  /* line 103, src/sass/custom/_data.scss */
+  /* line 114, src/sass/custom/_data.scss */
   .data-card {
     padding: 40% 8% 8% 8%;
     height: 40rem;
   }
 }
 
-/* line 117, src/sass/custom/_data.scss */
-.card-container {
-  margin-bottom: 7%;
-}
-
-/* line 121, src/sass/custom/_data.scss */
+/* line 127, src/sass/custom/_data.scss */
 .card-number {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 3em;
@@ -5928,7 +5937,7 @@ input:-moz-placeholder {
   text-align: center;
 }
 
-/* line 129, src/sass/custom/_data.scss */
+/* line 135, src/sass/custom/_data.scss */
 .card-title {
   text-align: center;
   text-transform: uppercase;
@@ -5939,19 +5948,34 @@ input:-moz-placeholder {
 }
 
 @media screen and (min-width: 600px) {
-  /* line 129, src/sass/custom/_data.scss */
+  /* line 135, src/sass/custom/_data.scss */
   .card-title {
     margin-bottom: 15%;
   }
 }
 
-/* line 142, src/sass/custom/_data.scss */
+/* line 148, src/sass/custom/_data.scss */
 .card-description {
   text-align: center;
   color: #323a45;
   font-weight: 300;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1.7rem;
+}
+
+/* line 156, src/sass/custom/_data.scss */
+#source {
+  padding: 2%;
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+/* line 160, src/sass/custom/_data.scss */
+#source p {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: right;
 }
 
 /* line 1, src/sass/custom/_report.scss */

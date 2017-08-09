@@ -45,8 +45,12 @@
 	h2 {
 		font-family: $font-sans;
 		font-weight: $font-normal;
-		margin: 0;
+		line-height: 0.1em;
 		font-size: rem(25px);
+
+		&:last-child {
+			margin-bottom: 1%;
+		}
 	}
 	button {
 		vertical-align: top;
@@ -89,20 +93,26 @@
 		font-weight: $font-bold;
 		text-transform: uppercase;
 		margin: 0;
+		color: $color-gray-dark;
 	}
 
-	h2, #city {
+	h2{
 		margin-top: 1%;
-		
 		font-family: $font-serif;
 		font-weight: $font-normal;
 		font-size: $h3-font-size;
+	}
+
+	#city {
+		font-family: $font-sans;
+		font-size: $h1-font-size;
+		font-weight: $font-bold;
+		margin-top: 0;
 	}
 }
 
 .data-card {
 	padding: 15% 5% 5% 5%;
-	margin-bottom: 5%;
 	background-color: $color-white;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	height: 30rem;
@@ -112,10 +122,6 @@
 		height: 40rem;
 	}
 
-}
-
-.card-container {
-	margin-bottom: 7%;
 }
 
 .card-number {
@@ -145,4 +151,16 @@
 	font-weight: 300;
 	font-family: $font-sans;
 	font-size: $h4-font-size;
+}
+
+#source {
+	padding: 2%;
+	margin: 0;
+	margin-bottom: 3%;
+	p {
+		font-family: $font-sans;
+		font-size: $h6-font-size;
+		font-style: italic;
+		text-align: right;
+	}
 }
