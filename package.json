@@ -4,6 +4,7 @@
   "description": "small business pages ",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.16.2",
     "uswds": "^1.2.1"
   },
   "devDependencies": {
