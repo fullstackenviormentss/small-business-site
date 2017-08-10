@@ -2,23 +2,30 @@
 $(function($){
   // mobile navigation
 
-  $('.usa-menu-btn').on('click', function() {
-    $('#nav-mobile').addClass('is-visible');
+  $('.usa-menu-btn').on('click', function(e) {
+    var mobile = $("#nav-mobile").attr('id');
+
+    mobile.addClass('is-visible');
     $('.usa-overlay').addClass('is-visible');
+
+    $('.usa-accordion-button').on('click', function() {
+      $(this).attr('aria-expanded', 'true');
+      $(this).children().attr('aria-hidden', 'false');
+    });
+
   });
 
   $('.usa-overlay').click(function(event) { 
-    if(!$(event.target).closest('#nav-mobile').length) {
-        if($('#nav-mobile').is(":visible")) {
-            $('#nav-mobile').removeClass('is-visible');
+    var mobile = $("#nav-mobile").attr('id');
+
+    if(!$(event.target).closest(mobile).length) {
+        if(mobile.is(":visible")) {
+            mobile.removeClass('is-visible');
             $('.usa-overlay').removeClass('is-visible');
         }
     }        
   });
 
-  $('.usa-accordion-button').on('click', function() {
-    $(this).attr('aria-expanded', 'true');
-  })
 
   // navigation drop down
 

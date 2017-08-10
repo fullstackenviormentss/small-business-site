@@ -41,6 +41,7 @@
 }
 
 .usa-nav {
+  float: none;
   $sliding-panel-width: 26rem;
 
   @include position(fixed, 0 0 0 auto);

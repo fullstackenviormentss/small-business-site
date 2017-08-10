@@ -1,12 +1,12 @@
 $output-bourbon-deprecation-warnings: false !default; 
 
 // USDS Design Standards SCSS
-@import '../../node_modules/uswds/src/stylesheets/uswds.scss';
+@import '../../node_modules/uswds/dist/scss/uswds.scss';
 
 // Custom Pages
 @import 'custom/variables.scss';
+@import 'custom/uswds-navigation.scss';
 @import 'custom/navigation.scss';
-@import 'custom/header.scss';
 @import 'custom/hero.scss';
 @import 'custom/landing.scss';
 @import 'custom/section.scss';
