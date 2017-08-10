@@ -5983,6 +5983,7 @@ a:focus {
 /* line 15, src/sass/custom/_hero.scss */
 .usa-hero-callout {
   background-color: #ffffff;
+  width: 100%;
   min-height: 40rem;
   /* opacity: 0.8; 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.7+100 */
@@ -6000,11 +6001,11 @@ a:focus {
 @media screen and (min-width: 481px) {
   /* line 15, src/sass/custom/_hero.scss */
   .usa-hero-callout {
-    max-width: 100%;
+    max-width: 53rem;
   }
 }
 
-/* line 30, src/sass/custom/_hero.scss */
+/* line 31, src/sass/custom/_hero.scss */
 .usa-hero-callout h2 {
   color: #112e51;
   font-size: 2.9em;
@@ -6012,14 +6013,14 @@ a:focus {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
-/* line 37, src/sass/custom/_hero.scss */
+/* line 38, src/sass/custom/_hero.scss */
 .usa-hero-callout p {
   margin-top: 2rem;
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 2rem;
 }
 
-/* line 43, src/sass/custom/_hero.scss */
+/* line 44, src/sass/custom/_hero.scss */
 .usa-hero-callout .usa-button {
   margin-top: 1rem;
   width: auto;
@@ -6029,12 +6030,12 @@ a:focus {
   padding: 0.8em;
 }
 
-/* line 51, src/sass/custom/_hero.scss */
+/* line 52, src/sass/custom/_hero.scss */
 .usa-hero-callout .usa-button:focus {
   box-shadow: none;
 }
 
-/* line 57, src/sass/custom/_hero.scss */
+/* line 58, src/sass/custom/_hero.scss */
 .usa-hero-callout-alt {
   color: #323a45;
   font-size: 1.8em;
