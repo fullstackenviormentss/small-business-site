@@ -15,7 +15,7 @@ $(function($){
 
   });
 
-  $('.usa-overlay').click(function(event) { 
+  $('.usa-overlay').click(function(event) {
     var mobile = $("#nav-mobile").attr('id');
 
     if(!$(event.target).closest(mobile).length) {
@@ -23,7 +23,7 @@ $(function($){
             mobile.removeClass('is-visible');
             $('.usa-overlay').removeClass('is-visible');
         }
-    }        
+    }
   });
 
 
@@ -48,14 +48,14 @@ $(function($){
         }, 1000);
     }
   });
-  
+
 
   // drop down
   var sections = [];
   var id = false;
   var $navbara = $('.usa-sidenav-list a');
   var toCurrent = $('.usa-sidenav-list li')
-  
+
   $navbara.click(function(e){
     //prevent the page from refreshing
     e.preventDefault();
@@ -63,15 +63,15 @@ $(function($){
     $('html, body').animate({
       scrollTop: $($(this).attr('href')).offset().top
 	},1000);
-    
+
     hash($(this).attr('href'));
   });
-  
+
   //select all the anchors in the navbar one after another
   $navbara.each(function(){
    // and adds them in the sections variable
     sections.push($($(this).attr('href')));
-    
+
   })
 
   $(window).scroll(function(e){
@@ -80,7 +80,7 @@ $(function($){
     //cycle through the values in sections array
     for (var i in sections) {
       var section = sections[i];
-      //if scrollTop variable is bigger than the top offset of a section in the sections array then 
+      //if scrollTop variable is bigger than the top offset of a section in the sections array then
       if (scrollTop > section.offset().top){
         var scrolled_id = section.attr('id');
       }
@@ -88,7 +88,7 @@ $(function($){
     if (scrolled_id !== id) {
       id = scrolled_id;
       $($navbara).removeClass('current');
-      $('.usa-sidenav-list a[href="#' + id + '"]').addClass('current'); 
+      $('.usa-sidenav-list a[href="#' + id + '"]').addClass('current');
     }
   });
 
@@ -121,31 +121,29 @@ $(function($){
     }
   };
 
-  // function that takes in zipcode 
+  // function that takes in zipcode
   // uses Census Reporter api to retrieve data
   var getData = function() {
     var zipcode = $('#zipcode').val();
-    var income = "B19013";
-    var age = "B01002";
-    var employment = "B23025";
+    var income = "B19013_001E";
+    var age = "B01002_001E";
+    var employment = "B23025_001E";
+    var key = "6980d91653a1f78acd456d9187ed28e23ea5d4e3"
 
-    $.getJSON("https://api.censusreporter.org/1.0/data/show/latest?table_ids=" + income + "&geo_ids=86000US" + zipcode, function(getIncome){
-        var s = JSON.stringify(getIncome);
-        var income_num = String.getNumber(s, 'estimate');
-        var income_output = "$" + income_num.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    $.getJSON("https://api.census.gov/data/2015/acs5?get=" + income + "&for=zip+code+tabulation+area:" + zipcode + '&key=' + key, function(getIncome){
+        var value = getIncome[1][0]
+        var income_output = '$' + value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         $('#income').html(income_output);
     });
 
 
-    $.getJSON("https://api.censusreporter.org/1.0/data/show/latest?table_ids=" + age + "&geo_ids=86000US" + zipcode, function(getAge){
-        var s = JSON.stringify(getAge);
-        var age_num = String.getNumber(s, 'estimate');
+    $.getJSON("https://api.census.gov/data/2015/acs5?get=" + age + "&for=zip+code+tabulation+area:" + zipcode + '&key=' + key, function(getAge){
+        var age_num = getAge[1][0]
         $('#age').html(age_num);
     });
 
-    $.getJSON("https://api.censusreporter.org/1.0/data/show/latest?table_ids=" + employment + "&geo_ids=86000US" + zipcode, function(getEmployment){
-        var s = JSON.stringify(getEmployment);
-        var employment_num = String.getNumber(s, 'estimate');
+    $.getJSON("https://api.census.gov/data/2015/acs5?get=" + employment + "&for=zip+code+tabulation+area:" + zipcode + '&key=' + key, function(getEmployment){
+        var employment_num = getEmployment[1][0]
         $('#employment').html(commaSeparateNumber(employment_num));
     });
 
@@ -170,7 +168,7 @@ $(function($){
     var value = o.substring(index, index+8);
     var num = parseInt(value);
     return num;
-   
+
   };
 
   function commaSeparateNumber(val){
@@ -179,7 +177,7 @@ $(function($){
       }
       return val;
   };
-  
+
 
   // Get user input upon click or enter, return data
   $('#search').click(getData);
@@ -215,5 +213,3 @@ $(function($){
 
 
 });
-
-
