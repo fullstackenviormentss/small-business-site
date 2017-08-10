@@ -6233,6 +6233,11 @@ a:focus {
   font-weight: 300;
 }
 
+/* line 165, src/sass/custom/_section.scss */
+.steps {
+  padding-top: 5rem;
+}
+
 /* line 1, src/sass/custom/_inputs.scss */
 legend {
   font-size: 2rem;
